@@ -8,6 +8,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
 import ru.lebedev.liga.view.TelegramPCALB;
 
+import java.io.File;
+
 
 public class Main {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
@@ -18,6 +20,7 @@ public class Main {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
             TelegramPCALB telegramPCALB = new TelegramPCALB();
             telegramBotsApi.registerBot(telegramPCALB);
+
         } catch (TelegramApiException e) {
             LOGGER.error("Ошибка Телеграмм бота", e);
         }

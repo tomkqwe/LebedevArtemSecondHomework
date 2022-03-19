@@ -21,13 +21,13 @@ import ru.lebedev.liga.utils.PropertiesUtil;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class TelegramPCALB extends TelegramLongPollingBot {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     private static final String BOTUSERNAME_KEY = "bot.name";
     private static final String BOTTOKEN_KEY = "bot.token";
-
 
 
     @Override
@@ -51,8 +51,6 @@ public class TelegramPCALB extends TelegramLongPollingBot {
             LOGGER.debug("Получаем сообщение: {}", text);
             ForecastService service = new ChooseNeedService(text, repository).returnNeedService();
             Command command = new ChoosePrediction(repository, service, text);
-            InputFile inputFile = new InputFile(new File("./src/main/resources/graphics.png"));
-            SendPhoto sendPhoto = new SendPhoto(chatId, inputFile);
             String[] splitCommand = text.split(" ");
             String checkGraphOrNot = splitCommand[splitCommand.length - 1];
             try {
@@ -62,7 +60,8 @@ public class TelegramPCALB extends TelegramLongPollingBot {
                         execute(new SendMessage(chatId, command.commandExecute()));
                     } else {
                         graphPrediction.commandExecute();
-                        execute(sendPhoto);
+                        File file = new File(getClass().getClassLoader().getResource("graphics.png").getFile());
+                        execute(new SendPhoto(chatId, new InputFile(file)));
                     }
                 } else {
                     execute(new SendMessage(chatId, command.commandExecute()));

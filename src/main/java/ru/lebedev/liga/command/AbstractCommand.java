@@ -2,6 +2,7 @@ package ru.lebedev.liga.command;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import ru.lebedev.liga.command.dateCommand.DataOption;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
@@ -72,7 +73,6 @@ public abstract class AbstractCommand {
 
     public String writeMessage(){
         String s = "Вы ввели: " + command + " -это неверная команда\n Введите /info для справки";
-        LOGGER.debug("AbstractCommand метод writeMessage выводим сообщение о не корректных данных:\n{}",s);
         return s;
     }
 

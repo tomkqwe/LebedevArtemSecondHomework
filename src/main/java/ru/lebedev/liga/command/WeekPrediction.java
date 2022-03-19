@@ -1,5 +1,6 @@
 package ru.lebedev.liga.command;
 
+import ru.lebedev.liga.command.dateCommand.DataOption;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
@@ -44,6 +45,5 @@ public class WeekPrediction extends AbstractCommand implements Command {
                 .map(CurrencyModel::getValue)
                 .collect(Collectors.toList());
     }
-
 
 }

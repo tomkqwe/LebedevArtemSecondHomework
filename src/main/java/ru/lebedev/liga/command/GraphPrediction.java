@@ -52,11 +52,17 @@ public class GraphPrediction {
         plt.ylabel("value");
         plt.text(1, 1, "Days");
         plt.title("Graph of my currency");
-        plt.savefig("src/main/resources/graphics.png").dpi(200);
+        getGraphName(plt);
 // Don't miss this line to output the file!
         plt.executeSilently();
 
 
+    }
+
+    private void getGraphName(Plot plt) {
+        String fname = "graphics.png";
+
+        plt.savefig(fname).dpi(200);
     }
 
     private void addPlotBuilder(Plot plt) {

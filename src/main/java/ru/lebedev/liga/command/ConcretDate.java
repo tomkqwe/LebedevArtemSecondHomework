@@ -1,5 +1,6 @@
 package ru.lebedev.liga.command;
 
+import ru.lebedev.liga.command.dateCommand.DataOption;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
@@ -56,6 +57,5 @@ public class ConcretDate extends AbstractCommand implements Command {
         LOGGER.debug("ConcretDate getBetweenNowAndPredictionDate находим разницу в днях между сегодня и введенной датой: {}", between);
         return between;
     }
-
 
 }
