@@ -17,6 +17,7 @@ import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.repository.CurrencyRepositoryImpl;
 import ru.lebedev.liga.service.ChooseNeedService;
 import ru.lebedev.liga.service.ForecastService;
+import ru.lebedev.liga.utils.PropertiesUtil;
 
 import java.io.File;
 import java.io.IOException;
@@ -24,14 +25,19 @@ import java.io.IOException;
 public class TelegramPCALB extends TelegramLongPollingBot {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
+    private static final String BOTUSERNAME_KEY = "bot.name";
+    private static final String BOTTOKEN_KEY = "bot.token";
+
+
+
     @Override
     public String getBotUsername() {
-        return "Artem_LebedevPCH2_bot";
+        return PropertiesUtil.get(BOTUSERNAME_KEY);
     }
 
     @Override
     public String getBotToken() {
-        return "5120101031:AAGmBWPNUuZY-n7Yrdh9-bPn3QT3GWRDH-c";
+        return PropertiesUtil.get(BOTTOKEN_KEY);
     }
 
     @Override
@@ -40,21 +46,16 @@ public class TelegramPCALB extends TelegramLongPollingBot {
         LOGGER.info("Запускается функция onUpdateReceived, которая обрабатывает мессаж от юзера");
         String chatId = update.getMessage().getChatId().toString();
         if (update.hasMessage() && update.getMessage().hasText()) {
-            LOGGER.debug("Создаётся объект репозитория, где хранится вся информация в списках");
             CurrencyRepository repository = new CurrencyRepositoryImpl();
             String text = update.getMessage().getText();
             LOGGER.debug("Получаем сообщение: {}", text);
-            LOGGER.debug("Выбираем алгоритм исходя из сообщения");
             ForecastService service = new ChooseNeedService(text, repository).returnNeedService();
-            LOGGER.debug("Выбираем команду, которая обработает сообщение и вернет прогноз");
             Command command = new ChoosePrediction(repository, service, text);
             InputFile inputFile = new InputFile(new File("./src/main/resources/graphics.png"));
             SendPhoto sendPhoto = new SendPhoto(chatId, inputFile);
             String[] splitCommand = text.split(" ");
             String checkGraphOrNot = splitCommand[splitCommand.length - 1];
             try {
-                LOGGER.debug("Отправляем сообщение пользователю");
-
                 if (checkGraphOrNot.equals("graph") && splitCommand.length == 5) {
                     GraphPrediction graphPrediction = new GraphPrediction(repository, service, text);
                     if (graphPrediction.isCorrectCommand(text)) {
