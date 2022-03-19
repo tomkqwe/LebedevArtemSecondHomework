@@ -14,7 +14,6 @@ public class InfoCommand extends TelegramDefaultCommands implements Command {
 
     @Override
     public String commandExecute() {
-        writeLog();
         ArrayList<String> strings = new ArrayList<>();
         Currency[] values = Currency.values();
         String collect = Arrays

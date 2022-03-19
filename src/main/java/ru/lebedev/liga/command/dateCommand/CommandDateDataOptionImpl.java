@@ -15,6 +15,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CommandDateDataOptionImpl implements DataOption {
+
     private static final String TOMORROW = "tomorrow";
     private static final Pattern DATE_FROM_FUTURE = Pattern.compile("[0-3][0-9]\\.[0-1][0-9]\\.[0-9]{4}");
 
