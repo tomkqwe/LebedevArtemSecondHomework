@@ -1,6 +1,5 @@
 package ru.lebedev.liga.command;
 
-import ru.lebedev.liga.command.dateCommand.DataOption;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
@@ -11,9 +10,12 @@ import ru.lebedev.liga.utils.DataUtil;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 public class ConcretDate extends AbstractCommand implements Command {
+    private final static Pattern PATTERN = Pattern.compile("\\d\\d\\.\\d\\d\\.\\d{4}");
 
     public ConcretDate(CurrencyRepository repository, ForecastService forecastService, String command) {
         super(repository, forecastService, command);
@@ -21,18 +23,17 @@ public class ConcretDate extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-        LOGGER.debug("Обрабатываем команду на конкретную дату");
-        if (super.isCorrectCommand(super.getCommand())) {
-            long between = 0;
-            try {
-                between = getBetweenNowAndPredictionDate();
-            } catch (DateTimeParseException e) {
-                LOGGER.error(e.getParsedString(), e);
-                return "После команды введите дату из будущего в формате день.месяц.год (дд.мм.гггг)";
-            }
-            return getPredictionFromFuture(between);
+//        if (super.isCorrectCommand(super.getCommand())) {
+        long between = 0;
+        try {
+            between = getBetweenNowAndPredictionDate();
+        } catch (DateTimeParseException e) {
+            LOGGER.error(e.getParsedString(), e);
+
         }
-        return super.getCommand();
+        return getPredictionFromFuture(between);
+
+//        return super.getCommand();
     }
 
     private String getPredictionFromFuture(long between) {
@@ -44,18 +45,19 @@ public class ConcretDate extends AbstractCommand implements Command {
         for (int i = 0; i < between; i++) {
             dayPrediction = service.getDayPrediction(currency, i);
         }
-        String correctOutput = correctOutput(dayPrediction);
-        LOGGER.debug("ConcretDate getPredictionFromFuture находим нужное значение из будущего: {}", correctOutput);
-        return correctOutput;
+        return correctOutput(dayPrediction);
     }
 
     private long getBetweenNowAndPredictionDate() {
         LocalDate today = LocalDate.now();
-        String[] commandAndDate = super.getCommand().split(" ");
-        LocalDate destiny = LocalDate.parse(commandAndDate[2], DataUtil.PARSE_FORMATTER);
-        long between = ChronoUnit.DAYS.between(today, destiny);
-        LOGGER.debug("ConcretDate getBetweenNowAndPredictionDate находим разницу в днях между сегодня и введенной датой: {}", between);
-        return between;
+        Matcher matcher = PATTERN.matcher(super.getCommand());
+        String result = "";
+        if (matcher.find()) {
+            result = matcher.group();
+        }
+        LocalDate destiny = LocalDate.parse(result, DataUtil.PARSE_FORMATTER);
+        return ChronoUnit.DAYS.between(today, destiny);
+
     }
 
 }

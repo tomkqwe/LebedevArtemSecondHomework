@@ -18,8 +18,8 @@ public abstract class AbstractCommand {
     private final CurrencyRepository repository;
     private  ForecastService service;
     private final String command;
-    private final static Pattern PATTERN =
-            Pattern.compile("rate ((usd)|(eur)|(try)|(bgn)|(amd)) ((week)|(tomorrow)|(month)|([0-3][0-9]\\.[0-1][0-9]\\.[0-9]{4})) ((actual)|(moon)|(regress)) ?((list)|(graph))?");
+//    private final static Pattern PATTERN =
+//            Pattern.compile("rate ((usd)|(eur)|(try)|(bgn)|(amd)) ((week)|(tomorrow)|(month)|([0-3][0-9]\\.[0-1][0-9]\\.[0-9]{4})) ((actual)|(moon)|(regress)) ?((list)|(graph))?");
     public final static Logger LOGGER = LoggerFactory.getLogger(AbstractCommand.class);
 
     public AbstractCommand(CurrencyRepository repository, ForecastService service, String command) {
@@ -41,11 +41,11 @@ public abstract class AbstractCommand {
     }
 
 
-    public boolean isCorrectCommand(String command){
-        LOGGER.debug("Проверяем что комманда соответствует шаблону");
-        Matcher matcher = PATTERN.matcher(command.toLowerCase(Locale.ROOT));
-        return matcher.find();
-    }
+//    public boolean isCorrectCommand(String command){
+//        LOGGER.debug("Проверяем что комманда соответствует шаблону");
+//        Matcher matcher = PATTERN.matcher(command.toLowerCase(Locale.ROOT));
+//        return matcher.find();
+//    }
 
 
     public CurrencyModel getDayPrediction() {

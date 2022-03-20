@@ -18,15 +18,13 @@ public class MonthPrediction extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-        LOGGER.debug("MonthPrediction commandExecute , если комманда соответсвует шаблону, " +
-                "выводим ее иначе выводим сообщение о неверной команде");
-        if (super.isCorrectCommand(super.getCommand())) {
+//        if (super.isCorrectCommand(super.getCommand())) {
             return getListWithMonthPredictions()
                     .stream()
                     .map(super::correctOutput)
                     .collect(Collectors.joining("\n"));
-        }
-        return super.writeMessage();
+
+//        return super.writeMessage();
     }
 
     private List<CurrencyModel> getListWithMonthPredictions() {

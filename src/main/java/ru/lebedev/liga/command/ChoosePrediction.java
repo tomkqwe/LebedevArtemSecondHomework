@@ -28,7 +28,7 @@ public class ChoosePrediction extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-        String lowerCaseCommand = super.getCommand().toLowerCase(Locale.ROOT);
+        String lowerCaseCommand = super.getCommand().toLowerCase();
         if (lowerCaseCommand.equals("/info")) {
             return new InfoCommand(lowerCaseCommand).commandExecute();
         }

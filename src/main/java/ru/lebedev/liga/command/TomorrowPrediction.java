@@ -13,11 +13,11 @@ public class TomorrowPrediction extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-        if (super.isCorrectCommand(super.getCommand())) {
+//        if (super.isCorrectCommand(super.getCommand())) {
             CurrencyModel dayPrediction = super.getDayPrediction();
             return super.correctOutput(dayPrediction);
-        }
-        return super.writeMessage();
+
+//        return super.writeMessage();
     }
 
 }

@@ -19,16 +19,15 @@ public class WeekPrediction extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-        LOGGER.debug("WeekPrediction commandExecute , если комманда соответсвует шаблону, " +
-                "выводим ее иначе выводим сообщение о неверной команде");
-        if (super.isCorrectCommand(super.getCommand())) {
+
+//        if (super.isCorrectCommand(super.getCommand())) {
             return getListWithWeekPredictions()
                     .stream()
                     .map(super::correctOutput)
                     .collect(Collectors.joining("\n"));
 
-        }
-        return super.writeMessage();
+
+//        return super.writeMessage();
     }
 
     private List<CurrencyModel> getListWithWeekPredictions() {
