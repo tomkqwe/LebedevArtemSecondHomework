@@ -3,12 +3,11 @@ package ru.lebedev.liga.command;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
-import ru.lebedev.liga.service.ChooseNeedService;
 import ru.lebedev.liga.service.ForecastService;
 import ru.lebedev.liga.utils.DataUtil;
+import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 import java.time.LocalDate;
-import java.time.format.DateTimeParseException;
 import java.time.temporal.ChronoUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -23,22 +22,18 @@ public class ConcretDate extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-//        if (super.isCorrectCommand(super.getCommand())) {
-        long between = 0;
-        try {
-            between = getBetweenNowAndPredictionDate();
-        } catch (DateTimeParseException e) {
-            LOGGER.error(e.getParsedString(), e);
+        if (CheckCorrectCommand.isValidCommand(super.getCommand())) {
+            long between = getBetweenNowAndPredictionDate();
 
+            return getPredictionFromFuture(between);
         }
-        return getPredictionFromFuture(between);
 
-//        return super.getCommand();
+        return getErrorCommand();
     }
 
     private String getPredictionFromFuture(long between) {
 
-        ForecastService service = new ChooseNeedService(super.getCommand(), super.getRepository()).returnNeedService();
+        ForecastService service = super.getService();
         Currency currency = super.getCurrency();
 
         CurrencyModel dayPrediction = null;

@@ -28,7 +28,7 @@ public abstract class AbstractAlgorithm implements ForecastService {
     }
     @Override
     public List<CurrencyModel> getWeekPrediction(Currency currency) {
-        LOGGER.info("В методе getWeekPrediction прогнозируем на неделю");
+
         List<CurrencyModel> list = new ArrayList<>();
         for (int i = 0; i < WEEK; i++) {
             list.add(getDayPrediction(currency, i));
@@ -38,7 +38,7 @@ public abstract class AbstractAlgorithm implements ForecastService {
 
     @Override
     public List<CurrencyModel> getMonthPrediction(Currency currency) {
-        LOGGER.info("В методе getMonthPrediction прогнозируем на месяц");
+
         List<CurrencyModel> list = new ArrayList<>();
         for (int i = 0; i < MONTH; i++) {
             list.add(getDayPrediction(currency, i));

@@ -54,7 +54,7 @@ class ActualTest {
         Currency usd = Currency.USD;
         CurrencyModel dayPredictionActual = new Actual(repository).getDayPrediction(usd, 0);
         CurrencyModel dayPredictionRegress = new LineurRegressionImpl(repository).getDayPrediction(usd, 0);
-        CurrencyModel dayPredictionMoon = new Moon(repository).getDayPrediction(usd, 0);
+        CurrencyModel dayPredictionMoon = new MoonAlgorithm(repository).getDayPrediction(usd, 0);
         assertThat(dayPredictionActual).isNotEqualTo(dayPredictionRegress);
         assertThat(dayPredictionActual).isNotEqualTo(dayPredictionMoon);
         assertThat(dayPredictionRegress).isNotEqualTo(dayPredictionMoon);

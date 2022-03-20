@@ -1,11 +1,10 @@
 package ru.lebedev.liga.command;
 
-import ru.lebedev.liga.command.dateCommand.DataOption;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
-import ru.lebedev.liga.service.ChooseNeedService;
 import ru.lebedev.liga.service.ForecastService;
+import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -19,25 +18,22 @@ public class WeekPrediction extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-
-//        if (super.isCorrectCommand(super.getCommand())) {
+        if (CheckCorrectCommand.isValidCommand(super.getCommand())) {
             return getListWithWeekPredictions()
                     .stream()
                     .map(super::correctOutput)
                     .collect(Collectors.joining("\n"));
-
-
-//        return super.writeMessage();
+        }
+        return getErrorCommand();
     }
 
     private List<CurrencyModel> getListWithWeekPredictions() {
-        LOGGER.debug("WeekPrediction метод getListWithWeekPredictions получаем список с прогнозами");
-        ForecastService service = new ChooseNeedService(super.getCommand(), super.getRepository()).returnNeedService();
+//        ForecastService service = new ChooseNeedService(super.getCommand(), super.getRepository()).returnNeedService();
+        ForecastService service = super.getService();
         return service.getWeekPrediction(super.getCurrency());
     }
 
     public List<BigDecimal> getWeekPrediction(Currency currency) {
-        LOGGER.debug("WeekPrediction метод getWeekPrediction получаем список со значениями валюты");
         return super.getService()
                 .getWeekPrediction(currency)
                 .stream()

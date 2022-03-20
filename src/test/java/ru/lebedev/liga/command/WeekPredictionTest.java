@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepositoryImpl;
-import ru.lebedev.liga.service.ChooseNeedService;
+import ru.lebedev.liga.service.ChooseAlgorithm;
 import ru.lebedev.liga.service.ForecastService;
 
 import java.math.BigDecimal;
@@ -19,7 +19,7 @@ class WeekPredictionTest {
     @Test
     void commandExecute() {
         String command = "rate bgn week actual";
-        ForecastService service = new ChooseNeedService(command, repository).returnNeedService();
+        ForecastService service = new ChooseAlgorithm(command, repository).returnNeedService();
         WeekPrediction weekPrediction = new WeekPrediction(repository, service, command);
         String collect = service.getWeekPrediction(Currency.BGN)
                 .stream()
@@ -33,7 +33,7 @@ class WeekPredictionTest {
     @Test
     void check_getWeekPrediction() {
         String command = "rate eur week actual";
-        ForecastService service = new ChooseNeedService(command, repository).returnNeedService();
+        ForecastService service = new ChooseAlgorithm(command, repository).returnNeedService();
         List<BigDecimal> collect = service.getWeekPrediction(Currency.EUR)
                 .stream()
                 .map(CurrencyModel::getValue)
@@ -45,7 +45,7 @@ class WeekPredictionTest {
     @Test
     void check_isCorrectCommand_Return_True() {
         String command = "rate amd week actual";
-        ChooseNeedService amdWeekActual = new ChooseNeedService(command, repository);
+        ChooseAlgorithm amdWeekActual = new ChooseAlgorithm(command, repository);
         ForecastService service = amdWeekActual.returnNeedService();
         WeekPrediction weekPrediction = new WeekPrediction(repository, service, command);
 //        assertThat(weekPrediction.isCorrectCommand(command)).isTrue();

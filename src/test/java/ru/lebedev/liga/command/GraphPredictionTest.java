@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.repository.CurrencyRepositoryImpl;
-import ru.lebedev.liga.service.ChooseNeedService;
+import ru.lebedev.liga.service.ChooseAlgorithm;
 import ru.lebedev.liga.service.ForecastService;
 
 import java.io.IOException;
@@ -15,7 +15,6 @@ import java.util.List;
 import java.util.Map;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class GraphPredictionTest {
     CurrencyRepository repository = new CurrencyRepositoryImpl();
@@ -23,7 +22,7 @@ class GraphPredictionTest {
     @Test
     void commandExecute_Check_Maps_To_Equals() throws PythonExecutionException, IOException {
         String command = "rate USD,EUR,BGN week actual graph";
-        ForecastService service = new ChooseNeedService(command, repository).returnNeedService();
+        ForecastService service = new ChooseAlgorithm(command, repository).returnNeedService();
         GraphPrediction graphPrediction = new GraphPrediction(repository, service, command);
         graphPrediction.commandExecute();
         Map<Currency, List<BigDecimal>> currencyListMap = graphPrediction.getCurrencyListMap();

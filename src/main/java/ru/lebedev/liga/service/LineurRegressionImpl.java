@@ -18,7 +18,7 @@ public class LineurRegressionImpl extends AbstractAlgorithm {
 
     @Override
     public CurrencyModel getDayPrediction(Currency currency, int index) {
-        LOGGER.debug("Алгоритм Линейной регрессии, метод getDayPrediction");
+
         List<CurrencyModel> list = super.getRepository().getAllListRates(currency);
 
         LocalDate dateForPrediction = getActualDateForPredictionAndFilter(index);
@@ -39,13 +39,13 @@ public class LineurRegressionImpl extends AbstractAlgorithm {
 
     private double getValue(int index, double[] valuesX) {
         index %= 30;
-        LOGGER.debug("LineurRegressionImpl метод getValue, получаем конкретное значение {}",valuesX[index]);
+
         return valuesX[index];
     }
 
 
     private double[] getValuesX(List<CurrencyModel> modelsForOneMonth) {
-        LOGGER.debug("LineurRegressionImpl метод getValuesX, получаем значения валюты");
+
         return modelsForOneMonth
                 .stream()
                 .map(model -> String.valueOf(model.getValue()))
@@ -56,7 +56,7 @@ public class LineurRegressionImpl extends AbstractAlgorithm {
 
 
     private List<CurrencyModel> getModelsForOneMonth(List<CurrencyModel> list) {
-        LOGGER.debug("LineurRegressionImpl метод getModelsForOneMonth, экстраполируем по последнему месяцу");
+
         return list
                 .stream()
                 .sorted(Comparator.comparing(CurrencyModel::getDate).reversed())

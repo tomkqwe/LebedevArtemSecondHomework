@@ -2,17 +2,14 @@ package ru.lebedev.liga.command;
 
 import ru.lebedev.liga.command.dateCommand.CommandDateDataOptionImpl;
 import ru.lebedev.liga.command.dateCommand.CommandPeriodDataOptionImpl;
-import ru.lebedev.liga.command.dateCommand.DataOption;
 import ru.lebedev.liga.repository.CurrencyRepository;
-import ru.lebedev.liga.service.ChooseNeedService;
 import ru.lebedev.liga.service.ForecastService;
 
 import java.util.Arrays;
-import java.util.Locale;
+
 
 
 public class ChoosePrediction extends AbstractCommand implements Command {
-   private DataOption dataOption;
     private static final String DATE = "-date";
     private static final String PERIOD = "-period";
 
@@ -38,13 +35,16 @@ public class ChoosePrediction extends AbstractCommand implements Command {
         if (lowerCaseCommand.equals("/contacts")) {
             return new ContactCommand(lowerCaseCommand).commandExecute();
         }
-        ForecastService service = new ChooseNeedService(lowerCaseCommand, getRepository()).returnNeedService();
+        ForecastService service = super.getService();
+        if (service == null){
+            return new ErrorMessage(super.getCommand()).commandExecute();
+        }
         String[] wordsInCommand = lowerCaseCommand.split(" ");
-        if (Arrays.asList(wordsInCommand).contains(DATE)){
-            someRealization = new CommandDateDataOptionImpl().returnDatePeriodWhatYouWant(getRepository(),service,super.getCommand());
-        }else if (Arrays.asList(wordsInCommand).contains(PERIOD)){
-            someRealization = new CommandPeriodDataOptionImpl().returnDatePeriodWhatYouWant(getRepository(),service,super.getCommand());
-        }else {
+        if (Arrays.asList(wordsInCommand).contains(DATE)) {
+            someRealization = new CommandDateDataOptionImpl().returnDatePeriodWhatYouWant(getRepository(), service, super.getCommand());
+        } else if (Arrays.asList(wordsInCommand).contains(PERIOD)) {
+            someRealization = new CommandPeriodDataOptionImpl().returnDatePeriodWhatYouWant(getRepository(), service, super.getCommand());
+        } else {
             return new ErrorMessage(super.getCommand()).commandExecute();
         }
 
@@ -64,5 +64,6 @@ public class ChoosePrediction extends AbstractCommand implements Command {
 
         return someRealization.commandExecute();
     }
+
 
 }

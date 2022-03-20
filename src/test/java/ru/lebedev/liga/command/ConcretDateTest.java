@@ -5,7 +5,7 @@ import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.repository.CurrencyRepositoryImpl;
-import ru.lebedev.liga.service.ChooseNeedService;
+import ru.lebedev.liga.service.ChooseAlgorithm;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -18,7 +18,7 @@ class ConcretDateTest {
     @Test
     void isCorrectCommand_Return_True() {
         String command = "rate USD 23.05.2039 actual";
-        ChooseNeedService service = new ChooseNeedService(command, repository);
+        ChooseAlgorithm service = new ChooseAlgorithm(command, repository);
         ConcretDate concretDate = new ConcretDate(repository, service.returnNeedService(), command);
 //        assertThat(concretDate.isCorrectCommand(command)).isTrue();
     }
@@ -26,7 +26,7 @@ class ConcretDateTest {
     @Test
     void isCorrectCommand_Return_False() {
         String command = "rate USD 23,05,2039 actual";
-        ChooseNeedService service = new ChooseNeedService(command, repository);
+        ChooseAlgorithm service = new ChooseAlgorithm(command, repository);
         ConcretDate concretDate = new ConcretDate(repository, service.returnNeedService(), command);
 //        assertThat(concretDate.isCorrectCommand(command)).isFalse();
     }
@@ -34,7 +34,7 @@ class ConcretDateTest {
     @Test
     void check_commandExecute_Correct_Output() {
         String command = "rate USD 23.05.2039 actual";
-        ChooseNeedService service = new ChooseNeedService(command, repository);
+        ChooseAlgorithm service = new ChooseAlgorithm(command, repository);
         ConcretDate concretDate = new ConcretDate(repository, service.returnNeedService(), command);
         String result = concretDate.commandExecute();
         String correctOutput = concretDate.correctOutput(

@@ -15,13 +15,12 @@ import ru.lebedev.liga.command.Command;
 import ru.lebedev.liga.command.GraphPrediction;
 import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.repository.CurrencyRepositoryImpl;
-import ru.lebedev.liga.service.ChooseNeedService;
+import ru.lebedev.liga.service.ChooseAlgorithm;
 import ru.lebedev.liga.service.ForecastService;
 import ru.lebedev.liga.utils.PropertiesUtil;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class TelegramPCALB extends TelegramLongPollingBot {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
@@ -43,13 +42,11 @@ public class TelegramPCALB extends TelegramLongPollingBot {
     @Override
     public void onUpdateReceived(Update update) {
         // We check if the update has a message and the message has text
-        LOGGER.info("Запускается функция onUpdateReceived, которая обрабатывает мессаж от юзера");
         String chatId = update.getMessage().getChatId().toString();
         if (update.hasMessage() && update.getMessage().hasText()) {
             CurrencyRepository repository = new CurrencyRepositoryImpl();
             String text = update.getMessage().getText();
-            LOGGER.debug("Получаем сообщение: {}", text);
-            ForecastService service = new ChooseNeedService(text, repository).returnNeedService();
+            ForecastService service = new ChooseAlgorithm(text, repository).returnNeedService();
             Command command = new ChoosePrediction(repository, service, text);
             String[] splitCommand = text.split(" ");
             String checkGraphOrNot = splitCommand[splitCommand.length - 1];

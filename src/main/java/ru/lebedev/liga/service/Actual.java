@@ -17,7 +17,7 @@ public class Actual extends AbstractAlgorithm    {
 
     @Override
     public CurrencyModel getDayPrediction(Currency currency, int index) {
-        LOGGER.debug("Алгоритм актуальный метод getDayPrediction");
+
         List<CurrencyModel> allListRates = super.getRepository().getAllListRates(currency);
 
         LocalDate actualDateForPredictionAndFilter = getActualDateForPredictionAndFilter(index);

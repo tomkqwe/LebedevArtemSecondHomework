@@ -6,6 +6,7 @@ import com.github.sh0nk.matplotlib4j.builder.ScaleBuilder;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.service.ForecastService;
+import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 import java.io.IOException;
 import java.math.BigDecimal;
@@ -31,10 +32,10 @@ public class GraphPrediction {
     }
 
     public void commandExecute() throws PythonExecutionException, IOException {
-       if (isCorrectCommand(command)){
-           new ConcretDate(repository,service,command).writeMessage();
-           return;
-       }
+        if (CheckCorrectCommand.isValidCommand(command)) {//vse peredelat
+            new ConcretDate(repository, service, command).writeMessage();
+            return;
+        }
         String[] splitBySpace = command.split(" ");
         String currencies = splitBySpace[1];
         String weekOrMonth = splitBySpace[2];
@@ -91,13 +92,14 @@ public class GraphPrediction {
             currencyListMap.put(key, new MonthPrediction(repository, service, command).getMonthPrediction(key));
         }
     }
-    public boolean isCorrectCommand(String command){
+
+    public boolean isCorrectCommand(String command) {
         String[] split = command.split(" ");
         String[] currencies = split[1].toUpperCase(Locale.ROOT).split(",");
         for (String currency : currencies) {
-            try{
+            try {
                 Currency correctCurrency = Currency.valueOf(currency);
-            }catch (Exception e){
+            } catch (Exception e) {
                 return true;
             }
         }

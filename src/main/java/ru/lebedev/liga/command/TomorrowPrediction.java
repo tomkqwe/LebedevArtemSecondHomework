@@ -1,9 +1,9 @@
 package ru.lebedev.liga.command;
 
-import ru.lebedev.liga.command.dateCommand.DataOption;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.service.ForecastService;
+import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 
 public class TomorrowPrediction extends AbstractCommand implements Command {
@@ -13,11 +13,11 @@ public class TomorrowPrediction extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-//        if (super.isCorrectCommand(super.getCommand())) {
+        if (CheckCorrectCommand.isValidCommand(super.getCommand())) {
             CurrencyModel dayPrediction = super.getDayPrediction();
             return super.correctOutput(dayPrediction);
-
-//        return super.writeMessage();
+        }
+        return getErrorCommand();
     }
 
 }
