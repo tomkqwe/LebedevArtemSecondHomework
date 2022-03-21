@@ -3,22 +3,22 @@ package ru.lebedev.liga.command;
 import com.github.sh0nk.matplotlib4j.Plot;
 import com.github.sh0nk.matplotlib4j.PythonExecutionException;
 import com.github.sh0nk.matplotlib4j.builder.ScaleBuilder;
+import ru.lebedev.liga.command.GraphsCommands.GraphMonthOrWeekPrediction;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.service.ForecastService;
-import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Locale;
-import java.util.Map;
+import java.util.*;
 
-public class GraphPrediction {
+public class GraphPrediction implements Command  {
     private final CurrencyRepository repository;
     private final ForecastService service;
     private final String command;
+    private final static String WEEK = "week";
+    private final static String MONTH = "month";
+
     private final Map<Currency, List<BigDecimal>> currencyListMap = new HashMap<>();
 
     public GraphPrediction(CurrencyRepository repository, ForecastService service, String command) {
@@ -31,17 +31,15 @@ public class GraphPrediction {
         return currencyListMap;
     }
 
-    public void commandExecute() throws PythonExecutionException, IOException {
+    @Override
+    public String commandExecute() {
        //peredelat
-        String[] splitBySpace = command.split(" ");
-        String currencies = splitBySpace[1];
-        String weekOrMonth = splitBySpace[2];
-        if (weekOrMonth.equals("week")) {
-            initMapByWeek(currencies);
-        } else if (weekOrMonth.equals("month")) {
-            initMapByMonth(currencies);
-        }
+        return returnGraphName(executeGraph());
 
+    }
+
+    public Plot executeGraph() {
+        splitAndCheckCommand();
         Plot plt = Plot.create();
         addPlotBuilder(plt);
         plt.xscale(ScaleBuilder.Scale.linear);
@@ -50,24 +48,39 @@ public class GraphPrediction {
         plt.ylabel("value");
         plt.text(1, 1, "Days");
         plt.title("Graph of my currency");
-        getGraphName(plt);
+        returnGraphName(plt);
 // Don't miss this line to output the file!
-        plt.executeSilently();
-
-
+        try {
+            plt.executeSilently();
+        } catch (IOException | PythonExecutionException e) {
+            e.printStackTrace();
+        }
+        return plt;
     }
 
-    private void getGraphName(Plot plt) {
-        String fname = "graphics.png";
+    private void splitAndCheckCommand() {
+        String[] splitBySpace = command.split(" ");
+        String currencies = splitBySpace[1];
+        String weekOrMonth = splitBySpace[3];
+        if (weekOrMonth.equals(WEEK)) {
+            initMapByWeek(currencies);
+        } else if (weekOrMonth.equals(MONTH)) {
+            initMapByMonth(currencies);
+        }
+    }
 
+    public String returnGraphName(Plot plt) {
+        String fname = "graphics.png";
         plt.savefig(fname).dpi(200);
+        return fname;
+
     }
 
     private void addPlotBuilder(Plot plt) {
         for (Currency currency1 : currencyListMap.keySet()) {
             plt.plot()
                     .add(currencyListMap.get(currency1))
-                    .label("label")
+                    .label(currency1.toString())
                     .linestyle("-")
                     .linewidth(3.0);
         }
@@ -75,31 +88,20 @@ public class GraphPrediction {
     }
 
     private void initMapByWeek(String s) {
-        String[] splitCurrencys = s.toUpperCase(Locale.ROOT).split(",");
-        for (String currency : splitCurrencys) {
+        String[] curriencies = s.toUpperCase().split(",");
+        for (String currency : curriencies) {
             Currency key = Currency.valueOf(currency);
-            currencyListMap.put(key, new WeekPrediction(repository, service, command).getWeekPrediction(key));
+            currencyListMap.put(key, new GraphMonthOrWeekPrediction(service).getWeekPrediction(key));
         }
     }
 
     private void initMapByMonth(String s) {
-        String[] splitCurrencys = s.toUpperCase(Locale.ROOT).split(",");
-        for (String currency : splitCurrencys) {
+        String[] curriencies = s.toUpperCase().split(",");
+        for (String currency : curriencies) {
             Currency key = Currency.valueOf(currency);
-            currencyListMap.put(key, new MonthPrediction(repository, service, command).getMonthPrediction(key));
+            currencyListMap.put(key, new GraphMonthOrWeekPrediction(service).getMonthPrediction(key));
         }
     }
 
-    public boolean isCorrectCommand(String command) {
-        String[] split = command.split(" ");
-        String[] currencies = split[1].toUpperCase(Locale.ROOT).split(",");
-        for (String currency : currencies) {
-            try {
-                Currency correctCurrency = Currency.valueOf(currency);
-            } catch (Exception e) {
-                return true;
-            }
-        }
-        return false;
-    }
+
 }

@@ -26,4 +26,15 @@ public final class CheckCorrectCommand {
         }
         return false;
     }
+    public static boolean isValidGraph(String command){
+        String[] split = command.toLowerCase().split(" ");
+        try{
+            boolean outputGraph = new OutputGraphValidateImpl().checkCommand(split);
+            boolean date_period = new DatePeriodValidateImpl().checkCommand(split);
+            boolean algAlgorithm = new AlgAlgorithmValidateImpl().checkCommand(split);
+            return outputGraph && date_period && algAlgorithm && split.length == PERIOD_DATE_LENGTH;
+        }catch (ArrayIndexOutOfBoundsException e){
+            return false;
+        }
+    }
 }

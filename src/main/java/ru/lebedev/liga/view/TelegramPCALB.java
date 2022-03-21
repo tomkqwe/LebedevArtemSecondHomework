@@ -1,6 +1,6 @@
 package ru.lebedev.liga.view;
 
-import com.github.sh0nk.matplotlib4j.PythonExecutionException;
+import com.github.sh0nk.matplotlib4j.Plot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
@@ -10,17 +10,17 @@ import org.telegram.telegrambots.meta.api.objects.InputFile;
 import org.telegram.telegrambots.meta.api.objects.Update;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import ru.lebedev.liga.Main;
-import ru.lebedev.liga.command.ChoosePrediction;
 import ru.lebedev.liga.command.Command;
 import ru.lebedev.liga.command.GraphPrediction;
+import ru.lebedev.liga.command.PickPrediction;
 import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.repository.CurrencyRepositoryImpl;
 import ru.lebedev.liga.service.ChooseAlgorithm;
 import ru.lebedev.liga.service.ForecastService;
 import ru.lebedev.liga.utils.PropertiesUtil;
+import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 import java.io.File;
-import java.io.IOException;
 
 public class TelegramPCALB extends TelegramLongPollingBot {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
@@ -47,24 +47,18 @@ public class TelegramPCALB extends TelegramLongPollingBot {
             CurrencyRepository repository = new CurrencyRepositoryImpl();
             String text = update.getMessage().getText();
             ForecastService service = new ChooseAlgorithm(text, repository).returnNeedService();
-            Command command = new ChoosePrediction(repository, service, text);
-            String[] splitCommand = text.split(" ");
-            String checkGraphOrNot = splitCommand[splitCommand.length - 1];
+            Command command = new PickPrediction(repository, service, text).pickCommandFromMessage();
+
             try {
-                if (checkGraphOrNot.equals("graph") && splitCommand.length == 5) {
+                if (CheckCorrectCommand.isValidGraph(text)) {
                     GraphPrediction graphPrediction = new GraphPrediction(repository, service, text);
-                    if (graphPrediction.isCorrectCommand(text)) {
-                        execute(new SendMessage(chatId, command.commandExecute()));
-                    } else {
-                        graphPrediction.commandExecute();
-                        File file = new File(getClass().getClassLoader().getResource("graphics.png").getFile());
-                        execute(new SendPhoto(chatId, new InputFile(file)));
-                    }
+                    InputFile inputFile = new InputFile(new File(graphPrediction.returnGraphName(graphPrediction.executeGraph())));
+                    execute(new SendPhoto(chatId,inputFile));
                 } else {
                     execute(new SendMessage(chatId, command.commandExecute()));
                 }
-            } catch (TelegramApiException | PythonExecutionException | IOException e) {
-                LOGGER.error("Возникла ошибка", e.getCause());
+            } catch (TelegramApiException e) {
+                LOGGER.error("error tg",e);
             }
         }
     }

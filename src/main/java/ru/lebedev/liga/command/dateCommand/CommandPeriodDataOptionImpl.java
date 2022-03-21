@@ -8,6 +8,7 @@ import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.service.ForecastService;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class CommandPeriodDataOptionImpl implements DataOption {
     private static final String WEEK = "week";
@@ -15,10 +16,10 @@ public class CommandPeriodDataOptionImpl implements DataOption {
 
     @Override
     public Command returnDatePeriodWhatYouWant(CurrencyRepository repository, ForecastService service, String command) {
-        String[] wordsInCommand = command.toLowerCase().split(" ");
-        if (Arrays.asList(wordsInCommand).contains(WEEK)) {
+        List<String> wordsInCommand = Arrays.asList(command.toLowerCase().split(" "));
+        if (wordsInCommand.contains(WEEK)) {
             return new WeekPrediction(repository, service, command);
-        } else if (Arrays.asList(wordsInCommand).contains(MONTH)) {
+        } else if (wordsInCommand.contains(MONTH)) {
             return new MonthPrediction(repository, service, command);
         }
         return new ErrorMessage(command);

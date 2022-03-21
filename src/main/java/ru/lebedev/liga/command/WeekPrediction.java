@@ -22,7 +22,8 @@ public class WeekPrediction extends AbstractCommand implements Command {
             return getListWithWeekPredictions()
                     .stream()
                     .map(super::correctOutput)
-                    .collect(Collectors.joining("\n"));
+                    .collect
+                            (Collectors.joining("\n"));
         }
         return getErrorCommand();
     }

@@ -26,12 +26,12 @@ public class CurrencyController implements Controller {
             return;
         }
         try {
-            currency = Currency.valueOf(commands[1].toUpperCase(Locale.ROOT));
+            currency = Currency.valueOf(commands[1].toUpperCase());
         }catch (IllegalArgumentException e){
             console.printMessage("После команды \"rate\" необходимо вводить сокращенное наименование волюты (USD, EUR, TRY)");
             return;
         }
-        switch (commands[2].toLowerCase(Locale.ROOT)){
+        switch (commands[2].toLowerCase()){
             case "tomorrow" -> console.printDayPrediction(service.getDayPrediction(currency, 0));
             case "week" -> console.printWeekPrediction(service.getWeekPrediction(currency));
             default -> console.printMessage("После команды \"rate\" и наименования валюты необходимо вводить период прогноза (tomorrow, week)");

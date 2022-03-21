@@ -11,6 +11,7 @@ import ru.lebedev.liga.utils.DataUtil;
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.Arrays;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -22,8 +23,8 @@ public class CommandDateDataOptionImpl implements DataOption {
 
     @Override
     public Command returnDatePeriodWhatYouWant(CurrencyRepository repository, ForecastService service, String command) {
-        String[] wordsInCommand = command.toLowerCase().split(" ");
-        if (Arrays.asList(wordsInCommand).contains(TOMORROW)) {
+        List<String> wordsInCommand = Arrays.asList(command.toLowerCase().split(" "));
+        if (wordsInCommand.contains(TOMORROW)) {
             return new TomorrowPrediction(repository, service, command);
         }
         Matcher matcher = DATE_FROM_FUTURE.matcher(command);

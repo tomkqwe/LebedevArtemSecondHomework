@@ -57,4 +57,5 @@ public abstract class AbstractCommand {
                 dayPrediction.getValue().multiply(dayPrediction.getNominal()).setScale(2, RoundingMode.FLOOR));
     }
 
+
 }

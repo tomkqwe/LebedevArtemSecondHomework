@@ -6,11 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.telegram.telegrambots.meta.TelegramBotsApi;
 import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import org.telegram.telegrambots.updatesreceivers.DefaultBotSession;
-import ru.lebedev.liga.command.ChoosePrediction;
-import ru.lebedev.liga.repository.CurrencyRepository;
-import ru.lebedev.liga.repository.CurrencyRepositoryImpl;
-import ru.lebedev.liga.service.ChooseAlgorithm;
-import ru.lebedev.liga.service.ForecastService;
 import ru.lebedev.liga.view.TelegramPCALB;
 
 
@@ -20,10 +15,11 @@ public class Main {
     public static void main(String[] args) {
         LOGGER.info("Приложение стартовало!");
 
-//        String command = "rate USD -date 19.03.2022 -alg moon";
+//        String command = "rate USD -period week -alg moon -output graph";
 //        CurrencyRepository repository = new CurrencyRepositoryImpl();
 //        ForecastService service = new ChooseAlgorithm(command,repository).returnNeedService();
-//         String execute = new ChoosePrediction(repository, service, command).commandExecute();
+//        PickPrediction pickPrediction = new PickPrediction(repository, service, command);
+//        String execute = pickPrediction.pickCommandFromMessage().commandExecute();
 //        System.out.println(execute);
 
         try {

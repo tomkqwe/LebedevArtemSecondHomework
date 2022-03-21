@@ -18,7 +18,7 @@ public class SystemController implements Controller{
 
     @Override
     public void operate() {
-        switch (command.toLowerCase(Locale.ROOT)){
+        switch (command.toLowerCase()){
             case "help" -> console.printMessage("""
                                         
                     Cписок доступных комманд:

@@ -24,7 +24,6 @@ public class ConcretDate extends AbstractCommand implements Command {
     public String commandExecute() {
         if (CheckCorrectCommand.isValidCommand(super.getCommand())) {
             long between = getBetweenNowAndPredictionDate();
-
             return getPredictionFromFuture(between);
         }
 
