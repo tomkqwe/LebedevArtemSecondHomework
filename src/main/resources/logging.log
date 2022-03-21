@@ -1,0 +1,841 @@
+2022-03-20_17:54:36.364 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_17:55:02.813 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - No enum constant ru.lebedev.liga.model.Currency.-DATE
+java.lang.IllegalArgumentException: No enum constant ru.lebedev.liga.model.Currency.-DATE
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at ru.lebedev.liga.model.Currency.valueOf(Currency.java:3)
+	at ru.lebedev.liga.command.AbstractCommand.getCurrency(AbstractCommand.java:60)
+	at ru.lebedev.liga.command.AbstractCommand.getDayPrediction(AbstractCommand.java:53)
+	at ru.lebedev.liga.command.TomorrowPrediction.commandExecute(TomorrowPrediction.java:17)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:66)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_17:56:13.469 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:36:28.464 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:36:33.099 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+	at ru.lebedev.liga.command.AbstractCommand.getCommand(AbstractCommand.java:42)
+	at ru.lebedev.liga.command.AbstractCommand.<init>(AbstractCommand.java:21)
+	at ru.lebedev.liga.command.ChoosePrediction.<init>(ChoosePrediction.java:22)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_19:36:38.386 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+	at ru.lebedev.liga.command.AbstractCommand.getCommand(AbstractCommand.java:42)
+	at ru.lebedev.liga.command.AbstractCommand.<init>(AbstractCommand.java:21)
+	at ru.lebedev.liga.command.ChoosePrediction.<init>(ChoosePrediction.java:22)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_19:36:41.721 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+	at ru.lebedev.liga.command.AbstractCommand.getCommand(AbstractCommand.java:42)
+	at ru.lebedev.liga.command.AbstractCommand.<init>(AbstractCommand.java:21)
+	at ru.lebedev.liga.command.ChoosePrediction.<init>(ChoosePrediction.java:22)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_19:38:22.963 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+java.lang.NullPointerException: Cannot invoke "String.toLowerCase(java.util.Locale)" because "this.command" is null
+	at ru.lebedev.liga.command.AbstractCommand.getCommand(AbstractCommand.java:42)
+	at ru.lebedev.liga.command.AbstractCommand.<init>(AbstractCommand.java:21)
+	at ru.lebedev.liga.command.ChoosePrediction.<init>(ChoosePrediction.java:22)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_19:38:48.611 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:39:06.619 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:39:54.182 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:40:17.927 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:41:25.488 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:41:35.486 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Index 6 out of bounds for length 6
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at ru.lebedev.liga.utils.CorrectCommandUtil.isValidCommand(CorrectCommandUtil.java:52)
+	at ru.lebedev.liga.command.TomorrowPrediction.commandExecute(TomorrowPrediction.java:17)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:66)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_19:44:15.700 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:46:48.754 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:49:07.228 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+java.lang.IllegalArgumentException: No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at ru.lebedev.liga.model.Currency.valueOf(Currency.java:3)
+	at ru.lebedev.liga.command.AbstractCommand.getCurrency(AbstractCommand.java:50)
+	at ru.lebedev.liga.command.WeekPrediction.getListWithWeekPredictions(WeekPrediction.java:36)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:25)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:66)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_19:49:33.115 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+java.lang.IllegalArgumentException: No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at ru.lebedev.liga.model.Currency.valueOf(Currency.java:3)
+	at ru.lebedev.liga.command.AbstractCommand.getCurrency(AbstractCommand.java:50)
+	at ru.lebedev.liga.command.WeekPrediction.getListWithWeekPredictions(WeekPrediction.java:36)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:25)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:66)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_19:50:21.790 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_19:51:30.791 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_20:03:45.557 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_20:04:16.192 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_20:04:35.127 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_20:14:24.972 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_20:14:41.226 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_20:15:03.697 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:16:52.147 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:17:19.780 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Index 7 out of bounds for length 7
+java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 7
+	at ru.lebedev.liga.utils.CorrectCommandUtil.checkOutput(CorrectCommandUtil.java:62)
+	at ru.lebedev.liga.utils.CorrectCommandUtil.isValidCommand(CorrectCommandUtil.java:57)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:21)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_23:18:20.071 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:19:42.842 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:22:48.592 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:26:44.554 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:27:01.498 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Index 6 out of bounds for length 6
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at ru.lebedev.liga.utils.CorrectCommandUtil.isValidCommand(CorrectCommandUtil.java:56)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:21)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_23:27:18.994 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:31:36.484 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:34:49.512 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Index 6 out of bounds for length 6
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 6
+	at ru.lebedev.liga.utils.CorrectCommandUtil.isValidCommand(CorrectCommandUtil.java:58)
+	at ru.lebedev.liga.command.TomorrowPrediction.commandExecute(TomorrowPrediction.java:17)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-20_23:35:17.860 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:35:58.318 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-20_23:37:57.693 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_00:43:54.668 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_00:45:16.912 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_00:45:27.453 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_00:45:58.130 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_00:54:46.561 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_01:01:40.277 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_01:02:55.291 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_01:09:10.225 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "ru.lebedev.liga.model.CurrencyModel.getDate()" because "dayPrediction" is null
+java.lang.NullPointerException: Cannot invoke "ru.lebedev.liga.model.CurrencyModel.getDate()" because "dayPrediction" is null
+	at ru.lebedev.liga.command.AbstractCommand.correctOutput(AbstractCommand.java:56)
+	at ru.lebedev.liga.command.ConcretDate.getPredictionFromFuture(ConcretDate.java:43)
+	at ru.lebedev.liga.command.ConcretDate.commandExecute(ConcretDate.java:28)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_01:09:48.014 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_01:10:18.130 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_01:12:44.972 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_01:13:00.389 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - Cannot invoke "ru.lebedev.liga.model.CurrencyModel.getDate()" because "dayPrediction" is null
+java.lang.NullPointerException: Cannot invoke "ru.lebedev.liga.model.CurrencyModel.getDate()" because "dayPrediction" is null
+	at ru.lebedev.liga.command.AbstractCommand.correctOutput(AbstractCommand.java:56)
+	at ru.lebedev.liga.command.ConcretDate.getPredictionFromFuture(ConcretDate.java:43)
+	at ru.lebedev.liga.command.ConcretDate.commandExecute(ConcretDate.java:28)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_01:13:24.030 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_12:57:34.976 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_13:09:36.064 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_13:31:22.328 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_13:53:52.020 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_13:54:30.276 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_13:55:27.920 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_13:56:30.842 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_14:00:16.169 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_14:01:18.428 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_14:46:53.015 [Artem_LebedevPCH2_bot Telegram Connection] INFO  o.t.t.u.DefaultBotSession - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2022-03-21_15:05:07.880 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4a934207_91d6_4d54_978c_4e1af27ad1a8 = plt.plot(np.array([141.7863, 141.8148, 144.6520, 142.6198, 142.2921, 142.8906, 142.3250]),ls="-",label="label",lw=3.0)
+2022-03-21_15:05:07.882 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_884d2a03_2228_4690_81ee_184320ae0040 = plt.plot(np.array([80.1532, 80.0899, 81.3293, 80.7188, 80.2967, 81.1147, 80.9863]),ls="-",label="label",lw=3.0)
+2022-03-21_15:05:07.882 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_689077e8_a050_45d0_ad74_2aeee55390e2 = plt.plot(np.array([156.9422, 156.7452, 159.295, 158.0153, 157.0714, 158.5456, 158.4571]),ls="-",label="label",lw=3.0)
+2022-03-21_15:05:07.882 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_caa82464_cda4_4121_b7d6_e363ad49da6f = plt.xscale("linear")
+2022-03-21_15:05:07.882 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_30662043_150b_429a_9737_39b99d05efb1 = plt.yscale("linear")
+2022-03-21_15:05:07.882 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2d911bb8_72d0_4446_a6a1_93686e1ec1cb = plt.xlabel("value")
+2022-03-21_15:05:07.882 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4536870f_a29a_4e70_b9c3_5f4163d683d4 = plt.ylabel("value")
+2022-03-21_15:05:07.882 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c5c40744_9218_4a88_9b82_a75171fee29a = plt.text(1.0,1.0,"Days")
+2022-03-21_15:05:07.883 [main] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_15:05:07.883 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3d09b8d2_6c66_4002_aff0_9a488ebb065a = plt.savefig("graphics.png",dpi=200.0)
+2022-03-21_15:05:07.897 [main] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647864307887-0\exec.py]
+2022-03-21_15:05:09.583 [main] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_15:28:24.264 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:29:05.297 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+java.lang.IllegalArgumentException: No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at ru.lebedev.liga.model.Currency.valueOf(Currency.java:3)
+	at ru.lebedev.liga.command.AbstractCommand.getCurrency(AbstractCommand.java:51)
+	at ru.lebedev.liga.command.WeekPrediction.getListWithWeekPredictions(WeekPrediction.java:33)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:22)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_15:29:13.011 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:30:14.299 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+java.lang.IllegalArgumentException: No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at ru.lebedev.liga.model.Currency.valueOf(Currency.java:3)
+	at ru.lebedev.liga.command.AbstractCommand.getCurrency(AbstractCommand.java:51)
+	at ru.lebedev.liga.command.WeekPrediction.getListWithWeekPredictions(WeekPrediction.java:33)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:22)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:64)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_15:37:52.603 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:39:51.818 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:40:59.074 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:41:42.061 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:43:55.047 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:45:18.369 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_55ad8128_3028_4797_9105_e2b13191bd5f = plt.xscale("linear")
+2022-03-21_15:45:18.372 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_65d337b8_ecca_4798_8b02_0e2c9e435f93 = plt.yscale("linear")
+2022-03-21_15:45:18.372 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5ce46a7c_631f_4f40_a5f8_7a0bbf4b2fa6 = plt.xlabel("value")
+2022-03-21_15:45:18.372 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4c9a04cb_78aa_42c0_b2f3_cd1b46470092 = plt.ylabel("value")
+2022-03-21_15:45:18.373 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e0b27547_9bf4_44e3_b1e8_80502565d300 = plt.text(1.0,1.0,"Days")
+2022-03-21_15:45:18.373 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_15:45:18.374 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f5778975_a1cd_4204_9ea8_3f65a5c7f162 = plt.savefig("graphics.png",dpi=200.0)
+2022-03-21_15:45:18.394 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647866718384-0\exec.py]
+2022-03-21_15:45:19.260 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_15:45:26.040 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:46:31.330 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b08b33bf_898e_4ea8_89c6_019707c6dc25 = plt.xscale("linear")
+2022-03-21_15:46:31.333 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ff3565c7_d02f_46c6_b340_abf62f30f993 = plt.yscale("linear")
+2022-03-21_15:46:31.334 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b819e0f8_fa0f_40c1_91ac_fc31e1430802 = plt.xlabel("value")
+2022-03-21_15:46:31.334 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a6781b2e_b4ae_4cf4_b30b_1ad516eb32c0 = plt.ylabel("value")
+2022-03-21_15:46:31.334 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6b907add_ece6_419a_b9eb_d212a8dc516b = plt.text(1.0,1.0,"Days")
+2022-03-21_15:46:31.334 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_15:46:31.336 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d0f04005_2f6c_424e_a50b_90b8566609b5 = plt.savefig("graphics.png",dpi=200.0)
+2022-03-21_15:46:33.098 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:46:59.208 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a2953fd7_956f_477b_9153_0f2520586172 = plt.xscale("linear")
+2022-03-21_15:46:59.210 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_7edcb882_dc6d_4539_a971_2b9857f5d5d4 = plt.yscale("linear")
+2022-03-21_15:46:59.210 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5ad75564_d7b7_4dcf_b8c8_cf7e68b5f849 = plt.xlabel("value")
+2022-03-21_15:46:59.211 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_0e7f86da_72f3_4e4f_9204_ea0fffcb887c = plt.ylabel("value")
+2022-03-21_15:46:59.211 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d4bec62d_b13f_4d73_9feb_b23534f3941b = plt.text(1.0,1.0,"Days")
+2022-03-21_15:46:59.211 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_15:46:59.213 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_72c7b317_4777_49b0_b081_a83fd9504d4d = plt.savefig("graphics.png",dpi=200.0)
+2022-03-21_15:47:00.379 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:50:16.062 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_233976d5_abe3_4918_a5e1_fcdc633c918a = plt.xscale("linear")
+2022-03-21_15:50:16.065 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b3d68b08_22f2_4c6b_a396_c20a72c9115b = plt.yscale("linear")
+2022-03-21_15:50:16.066 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_cfb75975_01ce_4934_a5b6_a15523d28ab6 = plt.xlabel("value")
+2022-03-21_15:50:16.066 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_50fa522f_e1a7_424c_8027_8c906f5452cd = plt.ylabel("value")
+2022-03-21_15:50:16.066 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_1d9683a2_c8ae_40cd_bfcb_6d766abdbb54 = plt.text(1.0,1.0,"Days")
+2022-03-21_15:50:16.067 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_15:50:16.068 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e2eac581_ba5d_4150_8e19_d840cdf31669 = plt.savefig("graphics.png",dpi=200.0)
+2022-03-21_15:50:16.088 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647867016078-0\exec.py]
+2022-03-21_15:50:16.955 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_15:56:22.758 [Artem_LebedevPCH2_bot Telegram Executor] ERROR ru.lebedev.liga.Main - Возникла ошибка
+java.io.FileNotFoundException: C:\Users\79153\OneDrive\%d0%a0%d0%b0%d0%b1%d0%be%d1%87%d0%b8%d0%b9%20%d1%81%d1%82%d0%be%d0%bb\LebedevArtemSecondHomework\target\classes\graphics.png (Системе не удается найти указанный путь)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:211)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:153)
+	at org.apache.http.entity.mime.content.FileBody.writeTo(FileBody.java:116)
+	at org.apache.http.entity.mime.AbstractMultipartForm.doWriteTo(AbstractMultipartForm.java:134)
+	at org.apache.http.entity.mime.AbstractMultipartForm.writeTo(AbstractMultipartForm.java:157)
+	at org.apache.http.entity.mime.MultipartFormEntity.writeTo(MultipartFormEntity.java:113)
+	at org.apache.http.impl.DefaultBHttpClientConnection.sendRequestEntity(DefaultBHttpClientConnection.java:156)
+	at org.apache.http.impl.conn.CPoolProxy.sendRequestEntity(CPoolProxy.java:152)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:238)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.sendHttpPostRequest(DefaultAbsSender.java:1079)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:249)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_15:56:25.116 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_15:58:32.372 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_16:00:28.597 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9c57798b_b9f7_4b5d_b121_ef294a73a3f9 = plt.xscale("linear")
+2022-03-21_16:00:28.600 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_7739fa5f_e751_4384_b54d_33ba2d00dae1 = plt.yscale("linear")
+2022-03-21_16:00:28.600 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b8b52b15_b9c3_4e0e_8d28_889bc80edc6a = plt.xlabel("value")
+2022-03-21_16:00:28.600 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ea8202f3_ebf2_49f0_b4fe_ec178397c62b = plt.ylabel("value")
+2022-03-21_16:00:28.600 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_578fcc78_62f6_46b9_96a6_d7c315f51828 = plt.text(1.0,1.0,"Days")
+2022-03-21_16:00:28.601 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_16:00:28.602 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8298f4af_409d_4dfe_a28b_0d26f25c3b9b = plt.savefig("graphics.png",dpi=200.0)
+2022-03-21_16:00:29.790 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_16:05:33.865 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_16:06:07.061 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+java.lang.IllegalArgumentException: No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at ru.lebedev.liga.model.Currency.valueOf(Currency.java:3)
+	at ru.lebedev.liga.command.AbstractCommand.getCurrency(AbstractCommand.java:51)
+	at ru.lebedev.liga.command.WeekPrediction.getListWithWeekPredictions(WeekPrediction.java:33)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:22)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_16:16:19.373 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_16:17:12.517 [Artem_LebedevPCH2_bot Telegram Executor] ERROR o.t.t.u.DefaultBotSession - No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+java.lang.IllegalArgumentException: No enum constant ru.lebedev.liga.model.Currency.USD,EUR
+	at java.base/java.lang.Enum.valueOf(Enum.java:273)
+	at ru.lebedev.liga.model.Currency.valueOf(Currency.java:3)
+	at ru.lebedev.liga.command.AbstractCommand.getCurrency(AbstractCommand.java:51)
+	at ru.lebedev.liga.command.WeekPrediction.getListWithWeekPredictions(WeekPrediction.java:33)
+	at ru.lebedev.liga.command.WeekPrediction.commandExecute(WeekPrediction.java:22)
+	at ru.lebedev.liga.command.ChoosePrediction.commandExecute(ChoosePrediction.java:65)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_16:23:39.558 [Artem_LebedevPCH2_bot Telegram Connection] INFO  o.t.t.u.DefaultBotSession - Read timed out
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:283)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:309)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.read(SSLSocketInputRecord.java:478)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.readHeader(SSLSocketInputRecord.java:472)
+	at java.base/sun.security.ssl.SSLSocketInputRecord.bytesInCompletePacket(SSLSocketInputRecord.java:70)
+	at java.base/sun.security.ssl.SSLSocketImpl.readApplicationRecord(SSLSocketImpl.java:1454)
+	at java.base/sun.security.ssl.SSLSocketImpl$AppInputStream.read(SSLSocketImpl.java:1060)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:280)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:157)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.getUpdatesFromServer(DefaultBotSession.java:250)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$ReaderThread.run(DefaultBotSession.java:189)
+2022-03-21_16:51:27.570 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_16:52:50.205 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:29:07.332 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:30:11.792 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:31:44.775 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:31:49.295 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:32:01.759 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:32:58.165 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:33:35.855 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:34:40.601 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:34:40.835 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9973e651_d175_4a1f_a383_1d4bba89c3ca = plt.xscale("linear")
+2022-03-21_17:34:40.835 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_733ebbf2_fc4e_4c18_9680_41ea71651672 = plt.yscale("linear")
+2022-03-21_17:34:40.835 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c0741c82_9513_48ef_97bb_7dd04a10eda0 = plt.xlabel("value")
+2022-03-21_17:34:40.835 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_575a91d7_d208_4540_9aa0_5ebd3aab4ef5 = plt.ylabel("value")
+2022-03-21_17:34:40.835 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ca2c6d85_666f_4b3b_a14f_8b59099d802e = plt.text(1.0,1.0,"Days")
+2022-03-21_17:34:40.835 [main] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:34:40.835 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9464d68c_21b0_4198_b787_4d69942155a9 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:34:40.851 [main] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873280851-0\exec.py]
+2022-03-21_17:34:42.442 [main] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:34:55.027 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:35:14.616 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_220effac_301d_4e9e_b9ee_d5d8d5b5541f = plt.xscale("linear")
+2022-03-21_17:35:14.616 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c5b7f071_acee_4048_9e22_770837f3baab = plt.yscale("linear")
+2022-03-21_17:35:14.616 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f2a488e2_46fa_45ba_aa10_8a6f15f13c36 = plt.xlabel("value")
+2022-03-21_17:35:14.616 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_38ba0639_256c_4192_a690_d6728407141f = plt.ylabel("value")
+2022-03-21_17:35:14.616 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8f62c203_1e7e_4daa_b858_748f9fd60224 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:35:14.616 [main] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:35:14.616 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_30e00fd0_ad2e_4fe4_84d9_40c13d3048fc = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:35:14.663 [main] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873314632-0\exec.py]
+2022-03-21_17:35:15.486 [main] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:35:26.135 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:35:26.399 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_907bdae5_7c0c_4d2c_8cb2_e04ffb000811 = plt.xscale("linear")
+2022-03-21_17:35:26.400 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_86de3a1e_4555_4e47_834f_dfecbfd7a331 = plt.yscale("linear")
+2022-03-21_17:35:26.400 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8a9e3419_3e87_4ae5_9e31_280914471716 = plt.xlabel("value")
+2022-03-21_17:35:26.400 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_422527d2_697f_4c8e_84ca_74e8cca65fc8 = plt.ylabel("value")
+2022-03-21_17:35:26.400 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_32943338_e1d6_4e4a_9a73_264cd1f2c9b5 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:35:26.400 [main] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:35:26.401 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a01479bf_e416_4c11_bddb_32dac5b11b47 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:35:26.417 [main] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873326405-0\exec.py]
+2022-03-21_17:35:27.303 [main] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:35:34.081 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4570bcec_e7a0_4116_85af_1a381f1b6c3b = plt.xscale("linear")
+2022-03-21_17:35:34.081 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_103aa3e4_1de2_44d4_9426_f07cb3cf0631 = plt.yscale("linear")
+2022-03-21_17:35:34.082 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_90871c19_8eb8_4333_adf7_ed2e88363856 = plt.xlabel("value")
+2022-03-21_17:35:34.082 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_25d8405a_10ba_493a_a786_0b4bc4b8f680 = plt.ylabel("value")
+2022-03-21_17:35:34.082 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_286bfbe0_66bc_48a0_be70_42dc9e566df5 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:35:34.082 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:35:34.082 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b6efca41_12bf_43ee_8c70_a58189182d71 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:35:34.083 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873334082-0\exec.py]
+2022-03-21_17:35:34.907 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:35:38.580 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_13b45c79_5d43_4b76_9762_81fc1a2734b4 = plt.xscale("linear")
+2022-03-21_17:35:38.580 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_498fa909_ddee_4893_8727_c071e7f25f3e = plt.yscale("linear")
+2022-03-21_17:35:38.580 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d74d305f_9653_4f19_a22c_5649d08ec391 = plt.xlabel("value")
+2022-03-21_17:35:38.580 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_23979b40_3f5a_4354_9a55_3fb2a293a8d7 = plt.ylabel("value")
+2022-03-21_17:35:38.580 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2155b0e3_c34a_40bd_a747_804f14132641 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:35:38.580 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:35:38.581 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ebf5818e_205e_4098_b2f7_7918e4beb265 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:35:38.581 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873338581-0\exec.py]
+2022-03-21_17:35:39.400 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:36:29.345 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:36:37.004 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:37:39.948 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_dfff671e_919c_4ae3_b1c7_d0c28ff1843f = plt.xscale("linear")
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_98755d43_36b1_4910_b4be_8367da60113c = plt.yscale("linear")
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_00e41671_e162_44ee_a82e_1b32005559bb = plt.xlabel("value")
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3e9a2fed_6610_44df_bd03_4a516a71a9c3 = plt.ylabel("value")
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_183ed3a6_1362_4ba2_b919_19f7842652c0 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_911844eb_4c32_4278_9efb_b1bced70170b = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:37:45.306 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873465306-0\exec.py]
+2022-03-21_17:37:46.153 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2e597449_b2dd_4b53_add6_32d56a2ec03d = plt.xscale("linear")
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5824da82_74a5_48cf_99fd_40f7b4f619cf = plt.yscale("linear")
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e01dd3ad_0e7b_4736_9aae_f2bc08311848 = plt.xlabel("value")
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_cace0fd6_aebe_43a1_91b1_6d5f37d4673d = plt.ylabel("value")
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_27845cbe_f393_4ef2_bce6_bf03262868e5 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b7cae603_09dd_4b76_bc7b_143439a03e7c = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:37:46.220 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873466220-0\exec.py]
+2022-03-21_17:37:47.053 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:37:56.799 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_893ecd4b_3213_4ffc_875d_121d72887185 = plt.xscale("linear")
+2022-03-21_17:37:56.799 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d2103217_c109_4f5e_8e41_4022872b81e5 = plt.yscale("linear")
+2022-03-21_17:37:56.799 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_aba46649_c613_4f70_8705_c93e7749d4bf = plt.xlabel("value")
+2022-03-21_17:37:56.799 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_28d3c080_54c4_40b1_93c5_93dc8efa4bed = plt.ylabel("value")
+2022-03-21_17:37:56.799 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_648e3b47_aac5_4a10_bc7f_704b43a2fcb6 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:37:56.800 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:37:56.800 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6b7f9bf0_06b6_4f26_9b76_3ebc9ce4ba73 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:37:56.801 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873476800-0\exec.py]
+2022-03-21_17:37:57.620 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:37:57.698 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_096728fd_b374_4a3d_abfe_36bcbe556f40 = plt.xscale("linear")
+2022-03-21_17:37:57.698 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_0e4ebe22_5787_4f73_b861_f42b7bad1c00 = plt.yscale("linear")
+2022-03-21_17:37:57.698 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f6565531_98b4_4c95_aa2b_b7d0ad3c7bbb = plt.xlabel("value")
+2022-03-21_17:37:57.698 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3ce1aef9_4aba_4418_958c_4b8440a46d52 = plt.ylabel("value")
+2022-03-21_17:37:57.698 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e543b863_a9cf_4e4d_9ca0_663e7dea61f8 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:37:57.698 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:37:57.698 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_dd3ebc04_2925_4958_91af_7990c34bde47 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:37:57.706 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873477698-0\exec.py]
+2022-03-21_17:37:58.532 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:38:25.382 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_76b64528_5277_4138_aa6a_187717f910e5 = plt.xscale("linear")
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d953e20a_55c3_4c52_8e40_aae59663830d = plt.yscale("linear")
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_05a040cb_e5a1_4355_bbeb_7c75e7c2463c = plt.xlabel("value")
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e7d3d6be_3d16_452d_a355_a661b6190071 = plt.ylabel("value")
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_7a7d7da3_4c9d_4af6_9c23_2fc2a2b4db8d = plt.text(1.0,1.0,"Days")
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_0f2d368c_d2a8_44b1_a7c8_6b3884fb5296 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:38:28.472 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873508472-0\exec.py]
+2022-03-21_17:38:29.317 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:38:31.151 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_02577691_daa6_4fae_afe0_5e0aedba353e = plt.xscale("linear")
+2022-03-21_17:38:31.151 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6bc67e90_b9d1_4f1c_b419_35d3e6bb6087 = plt.yscale("linear")
+2022-03-21_17:38:31.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_71b1e994_ac17_40c8_8c3e_ea71ac029ae9 = plt.xlabel("value")
+2022-03-21_17:38:31.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_cb1f2ce7_91ce_46f5_9b3e_4850cb976e3e = plt.ylabel("value")
+2022-03-21_17:38:31.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4b67439f_9bb0_4124_afb6_f623a9b32a68 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:38:31.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:38:31.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2205ad11_9c70_47f2_a888_62b7a9efaa60 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:38:31.153 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873511152-0\exec.py]
+2022-03-21_17:38:31.979 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:46:14.228 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:46:18.177 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:46:24.710 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_dff67d9a_13bd_4aa2_af25_9c4020d4d635 = plt.xscale("linear")
+2022-03-21_17:46:24.710 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c9013899_f599_4001_bb66_d1b8b43809bc = plt.yscale("linear")
+2022-03-21_17:46:24.710 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6d6dfdb4_b988_4bb4_bf3f_c16114d7d789 = plt.xlabel("value")
+2022-03-21_17:46:24.710 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_32a11a29_2e9e_45d9_a4cf_3931fb36fc0c = plt.ylabel("value")
+2022-03-21_17:46:24.710 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5e56ea22_cb0f_4c02_bb86_7d024845be31 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:46:24.710 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:46:24.710 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f1c48fc7_600e_4f4e_8687_72e09b1977a9 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:46:24.726 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647873984726-0\exec.py]
+2022-03-21_17:46:25.554 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:46:25.622 [Artem_LebedevPCH2_bot Telegram Executor] ERROR ru.lebedev.liga.Main - error tg
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error sending photo: [400] Bad Request: wrong HTTP URL specified
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.deserializeResponse(SendPhoto.java:90)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:249)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_17:51:22.683 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_1695819b_8120_4a8b_92b7_450c220ffc14 = plt.xscale("linear")
+2022-03-21_17:51:22.683 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_43f25dc7_97f5_4926_8d7d_55b02ad39e77 = plt.yscale("linear")
+2022-03-21_17:51:22.683 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3ca32a07_f111_4a8a_8e65_887c819f5b0a = plt.xlabel("value")
+2022-03-21_17:51:22.683 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_af8742bd_d445_4a96_85b5_5b11950bb9bc = plt.ylabel("value")
+2022-03-21_17:51:22.683 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_518de9af_db35_498b_b423_fb225cf36496 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:51:22.683 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:51:22.683 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6ae6dc36_5a15_43ed_8dac_1cbd0b580dfe = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:51:22.684 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647874282683-0\exec.py]
+2022-03-21_17:51:23.525 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:51:23.733 [Artem_LebedevPCH2_bot Telegram Executor] ERROR ru.lebedev.liga.Main - error tg
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error sending photo: [400] Bad Request: wrong HTTP URL specified
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.deserializeResponse(SendPhoto.java:90)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:249)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_17:52:23.532 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:52:41.532 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5dbef41d_33cd_4752_8d75_1e4968db687d = plt.xscale("linear")
+2022-03-21_17:52:41.532 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_30f44080_cf49_42e9_aab6_70a939591620 = plt.yscale("linear")
+2022-03-21_17:52:41.532 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_593dafca_fc58_4276_8f25_54b6b10297f5 = plt.xlabel("value")
+2022-03-21_17:52:41.532 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c062b992_c79f_450b_8d3f_c737af85e0f1 = plt.ylabel("value")
+2022-03-21_17:52:41.532 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_bfba5d59_1be2_41ce_aff5_8e1a3e77f4d7 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:52:41.532 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:52:41.532 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_094322d9_2b5f_48e4_827b_3819421b5bb6 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:52:41.548 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647874361532-0\exec.py]
+2022-03-21_17:52:42.376 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:52:42.579 [Artem_LebedevPCH2_bot Telegram Executor] ERROR ru.lebedev.liga.Main - error tg
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error sending photo: [400] Bad Request: wrong HTTP URL specified
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.deserializeResponse(SendPhoto.java:90)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:249)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2dc2d4c9_b818_4c94_bc49_cb7443682554 = plt.xscale("linear")
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_28c1e83e_ef4a_4af2_96ec_7da636087ebd = plt.yscale("linear")
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6d7a06a3_9ea5_4037_9c71_4b0beb3f415d = plt.xlabel("value")
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_17406d5c_efc3_4b1e_a762_92bfb9bb0742 = plt.ylabel("value")
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_305ccd0a_ba16_4502_8ceb_8af2126848a8 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a2e9d513_aa1b_42b5_ab36_68150f62b0a3 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:54:11.634 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647874451634-0\exec.py]
+2022-03-21_17:54:14.449 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2fab0a7c_8aee_4d38_956d_c7e655968639 = plt.plot(np.array([74.9362, 68.86, 72.52, 73.88, 66.54, 67.29, 69.13]),ls="-",label="USD",lw=3.0)
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ab308bcb_4839_4eab_9464_78607361d409 = plt.xscale("linear")
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_cf9666ad_2d9a_434a_9adb_71635bed40e5 = plt.yscale("linear")
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f2d5f737_32bb_4c9e_9ea8_72ea15c6de4f = plt.xlabel("value")
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5c4b499d_d564_4ef9_ab17_55ca7da27e26 = plt.ylabel("value")
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2525c64e_d70d_47d7_b4e4_7c055f09b4f4 = plt.text(1.0,1.0,"Days")
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_dc2480f5_d259_4b69_9143_c21e83d0347d = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_17:54:18.237 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647874458237-0\exec.py]
+2022-03-21_17:54:19.138 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_17:54:19.259 [Artem_LebedevPCH2_bot Telegram Executor] ERROR ru.lebedev.liga.Main - error tg
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error sending photo: [400] Bad Request: wrong HTTP URL specified
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.deserializeResponse(SendPhoto.java:90)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:249)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_23:43:59.204 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_839fb082_5c39_4d5d_bc8b_eb9c167f3db8 = plt.plot(np.array([74.9362, 79.64, 77.55, 77.56, 74.95, 70.02, 64.77]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_03ffd8a8_5aa4_42e4_abbb_e13afea4fe04 = plt.xscale("linear")
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6d3cff77_6d66_478e_9632_ef6e9b873086 = plt.yscale("linear")
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e47aae5a_117d_4074_a3d4_46cc338cd2ba = plt.xlabel("value")
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8d0a340d_9a6c_4429_9796_724a00bcbe32 = plt.ylabel("value")
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_496c631e_11fa_4ad5_bba5_ab3732112f03 = plt.text(1.0,1.0,"Days")
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:47:15.234 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_7b16c9a6_5ff4_4c24_8df1_58a9cd86e600 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:47:15.265 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647895635249-0\exec.py]
+2022-03-21_23:47:16.155 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:52:11.434 [Artem_LebedevPCH2_bot Telegram Executor] ERROR ru.lebedev.liga.Main - error tg
+org.telegram.telegrambots.meta.exceptions.TelegramApiRequestException: Error sending photo: [400] Bad Request: wrong HTTP URL specified
+	at org.telegram.telegrambots.meta.api.methods.send.SendPhoto.deserializeResponse(SendPhoto.java:90)
+	at org.telegram.telegrambots.bots.DefaultAbsSender.execute(DefaultAbsSender.java:249)
+	at ru.lebedev.liga.view.TelegramPCALB.onUpdateReceived(TelegramPCALB.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.telegram.telegrambots.meta.generics.LongPollingBot.onUpdatesReceived(LongPollingBot.java:27)
+	at org.telegram.telegrambots.updatesreceivers.DefaultBotSession$HandlerThread.run(DefaultBotSession.java:317)
+2022-03-21_23:53:29.663 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_cb5ed8f9_8474_4323_8dd9_afe18c3fc1c2 = plt.plot(np.array([74.9362, 69.42, 64.66, 58.45, 54.16, 52.81, 51.41]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fe5e5717_a276_49bc_b722_d3d7d2caeea2 = plt.xscale("linear")
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3a3f485f_a708_4739_ad58_d91b10bcbfb3 = plt.yscale("linear")
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d08c81c2_251f_42ce_a4d8_54f28677d4c2 = plt.xlabel("value")
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c61379a8_dcf7_43ff_86dd_a2abc5d2c9c3 = plt.ylabel("value")
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_1b4e646f_e2e7_451a_b654_524629dc309e = plt.text(1.0,1.0,"Days")
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:53:35.589 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6adaf64e_e420_476d_8145_fb927d0f18e6 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:53:35.605 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896015589-0\exec.py]
+2022-03-21_23:53:36.475 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_815e6e67_ce40_4924_b602_597d28b9a559 = plt.plot(np.array([74.9362, 69.11, 65.78, 59.72, 60.54, 64.32, 67.81]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f9b45aa6_18ac_4760_a884_a230c48cc65f = plt.xscale("linear")
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_125e9ce4_1d27_471c_9b76_7f44b2e73af1 = plt.yscale("linear")
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9de976a0_bb8a_40e3_a0bf_520113b18e57 = plt.xlabel("value")
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9960d9ed_21e0_4f3b_804d_ac221775388c = plt.ylabel("value")
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f7956e42_73c9_4870_adfa_9d0e67c8a963 = plt.text(1.0,1.0,"Days")
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:53:42.063 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_13a40f63_5e45_4b38_adf1_eed785cda86a = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:53:42.064 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896022064-0\exec.py]
+2022-03-21_23:53:42.953 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:53:48.876 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_60637034_0480_47be_a91e_aaaa885dab13 = plt.plot(np.array([74.9362, 78.12, 75.45, 76.58, 75.87, 69.79, 65.74]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:53:48.877 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c81075ec_5fe1_44c6_b04f_5cc5669df16f = plt.xscale("linear")
+2022-03-21_23:53:48.877 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_1eb4d23a_775c_4942_a382_ae4ae2b301bc = plt.yscale("linear")
+2022-03-21_23:53:48.877 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9ac3f3c2_40d7_41d5_a641_2805547a57cb = plt.xlabel("value")
+2022-03-21_23:53:48.877 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_34da669b_25dd_4efc_8f7f_4b11c4316888 = plt.ylabel("value")
+2022-03-21_23:53:48.877 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_948a9b12_82ac_4317_9faa_80d61bd93ba8 = plt.text(1.0,1.0,"Days")
+2022-03-21_23:53:48.877 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:53:48.877 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9b761f3f_bfed_45f9_a72c_34d63749b786 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:53:48.878 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896028877-0\exec.py]
+2022-03-21_23:53:49.716 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:54:02.160 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e8711503_9a5f_4188_8116_a36376534cd0 = plt.plot(np.array([74.9362, 76.94, 83.56, 81.43, 73.33, 78.62, 76.08]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3fea8dc9_0987_4c72_84ef_0d3ec275ec75 = plt.plot(np.array([85.1282, 76.92, 76.88, 72.90, 75.99, 83.21, 82.52]),ls="-",label="EUR",lw=3.0)
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_64f68ae3_a829_48d0_9689_1cfd52c71a1c = plt.xscale("linear")
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4314047b_f5f1_461b_b33f_3f985c2d166b = plt.yscale("linear")
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_85859e19_8aef_4473_9389_9bb22f186437 = plt.xlabel("value")
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6d082ecf_96db_49c8_9a22_d047dc5005dc = plt.ylabel("value")
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_89691ded_9088_45dc_be4f_f267827fe90a = plt.text(1.0,1.0,"Days")
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:54:02.161 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_121b67d8_ac05_4ca7_b3f6_2b5cc2bc1ff0 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:54:02.162 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896042161-0\exec.py]
+2022-03-21_23:54:02.999 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:54:15.342 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e8317eb7_e606_4157_8060_fd777bffc16f = plt.plot(np.array([74.9362, 77.92, 75.32, 81.36, 73.55, 67.66, 70.66]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:54:15.342 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5f20ac99_0491_431d_a02d_7afcef802f53 = plt.plot(np.array([43.5572, 43.02, 40.15, 43.90, 47.87, 43.81, 45.50]),ls="-",label="BGN",lw=3.0)
+2022-03-21_23:54:15.342 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c8953f7b_5e0d_431c_86fd_6eca568b1f3e = plt.plot(np.array([85.1282, 92.65, 97.99, 96.24, 93.09, 88.24, 93.75]),ls="-",label="EUR",lw=3.0)
+2022-03-21_23:54:15.342 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2be4bec9_d6b0_4949_a4b5_5ffa71b0a040 = plt.xscale("linear")
+2022-03-21_23:54:15.343 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b61fac05_263b_4309_abba_158cfae07c74 = plt.yscale("linear")
+2022-03-21_23:54:15.343 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fba32b31_fd84_4f89_9699_a3057a7371af = plt.xlabel("value")
+2022-03-21_23:54:15.343 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e9fd5a1b_2c73_464f_9be0_538097024387 = plt.ylabel("value")
+2022-03-21_23:54:15.343 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ff139734_2ef9_47de_b75c_fdf518cfdd70 = plt.text(1.0,1.0,"Days")
+2022-03-21_23:54:15.343 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:54:15.343 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f03dfb3e_c366_4d04_b313_1c6a14e9ce11 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:54:15.344 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896055343-0\exec.py]
+2022-03-21_23:54:16.196 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2681fd39_1c6e_40e0_a7d4_7bfddcc809ce = plt.plot(np.array([74.9362, 74.25, 68.60, 75.01, 72.26, 73.71, 73.36]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c6266012_3638_48de_b67b_8c376c6c2bba = plt.plot(np.array([43.5572, 45.30, 47.34, 50.55, 48.95, 51.72, 52.91]),ls="-",label="BGN",lw=3.0)
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b2f38a28_3960_4313_94d2_afd743a82307 = plt.plot(np.array([85.1282, 85.82, 91.94, 99.23, 104.32, 95.14, 91.60]),ls="-",label="EUR",lw=3.0)
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b72a8964_b723_4f8c_9d66_0a2b90b132dd = plt.xscale("linear")
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b1376688_7d57_45b1_b342_0234c7adebc7 = plt.yscale("linear")
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3d1616c5_8b5b_45c6_b008_d1e1fa8dcb2c = plt.xlabel("value")
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_905fd707_c097_458e_b27a_a4ddc1c698b8 = plt.ylabel("value")
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d9b37967_857a_4de1_8aba_eac619bdb94d = plt.text(1.0,1.0,"Days")
+2022-03-21_23:57:59.559 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:57:59.560 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_deffa613_efee_44c8_a4d4_38b6805e43cb = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:57:59.561 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896279560-0\exec.py]
+2022-03-21_23:58:00.432 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:58:13.005 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ff0645fa_1f5a_46ad_8626_aa40869365eb = plt.plot(np.array([74.9362, 74.94, 73.73, 68.69, 68.40, 69.17, 69.23]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:58:13.005 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fe19aca7_4eb8_4287_b6cb_841fdabe40b7 = plt.plot(np.array([43.5572, 41.21, 37.16, 36.56, 39.11, 41.03, 45.01]),ls="-",label="BGN",lw=3.0)
+2022-03-21_23:58:13.005 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_43f8316f_d5fb_4cd3_9776_3cf943edb34d = plt.plot(np.array([85.1282, 87.33, 80.00, 85.08, 83.47, 88.32, 87.44]),ls="-",label="EUR",lw=3.0)
+2022-03-21_23:58:13.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a31f938b_fc85_49f9_b96c_213d58e64a21 = plt.xscale("linear")
+2022-03-21_23:58:13.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b62123ed_ab81_4340_aaa5_13479d863d04 = plt.yscale("linear")
+2022-03-21_23:58:13.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b7e0f898_cea6_4c89_bc28_7e40fa2b5496 = plt.xlabel("value")
+2022-03-21_23:58:13.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_1941205a_d0d6_4f6e_beac_6b05f5b11e47 = plt.ylabel("value")
+2022-03-21_23:58:13.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fe55f5bd_8772_404a_b6cc_61b3f35ce0cb = plt.text(1.0,1.0,"Days")
+2022-03-21_23:58:13.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:58:13.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_cc31afcc_26a4_414a_816a_898c52054723 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:58:13.007 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896293006-0\exec.py]
+2022-03-21_23:58:13.854 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:58:27.737 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c318b70d_8710_4b38_b086_860ee22f10f9 = plt.plot(np.array([74.9362, 71.94, 71.90, 70.13, 71.01, 77.74, 79.56]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:58:27.737 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_02645c0e_983c_4862_a324_d9064d5e8456 = plt.plot(np.array([43.5572, 47.17, 42.68, 42.81, 40.89, 42.47, 38.23]),ls="-",label="BGN",lw=3.0)
+2022-03-21_23:58:27.737 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e4c3e573_b152_4026_a59c_e838686d33e8 = plt.plot(np.array([85.1282, 86.60, 81.81, 84.05, 78.78, 77.03, 78.44]),ls="-",label="EUR",lw=3.0)
+2022-03-21_23:58:27.737 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_97b52b59_b6f9_41b1_a057_f4eefa0bd927 = plt.xscale("linear")
+2022-03-21_23:58:27.738 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a511af2b_5c5e_4e33_ad6d_b96aac7f18c1 = plt.yscale("linear")
+2022-03-21_23:58:27.738 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f231ad39_639d_487d_8cd1_0501aba7e4a2 = plt.xlabel("value")
+2022-03-21_23:58:27.738 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f3fdbed9_8226_4441_8144_f1ff05759bb4 = plt.ylabel("value")
+2022-03-21_23:58:27.738 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_442421fc_e5e6_4b61_a796_7a695e1c5f19 = plt.text(1.0,1.0,"Days")
+2022-03-21_23:58:27.738 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:58:27.738 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4afb5b8d_9c8d_421f_9010_cb6ae72c40c0 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:58:27.739 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896307738-0\exec.py]
+2022-03-21_23:58:28.582 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-21_23:59:33.291 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-21_23:59:50.916 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_483a1d4d_3fb5_48a3_bf2a_1d2ea324da66 = plt.plot(np.array([43.5572, 46.60, 44.66, 45.96, 43.55, 40.61, 37.78]),ls="-",label="BGN",lw=3.0)
+2022-03-21_23:59:50.917 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_0dc06791_c526_45c9_8e6b_5e066cb0e49b = plt.plot(np.array([74.9362, 75.42, 72.26, 79.00, 80.01, 77.47, 82.31]),ls="-",label="USD",lw=3.0)
+2022-03-21_23:59:50.917 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_648ff317_5366_4e94_ab16_0ff0128eacf3 = plt.plot(np.array([85.1282, 84.05, 76.70, 81.53, 79.23, 78.68, 76.91]),ls="-",label="EUR",lw=3.0)
+2022-03-21_23:59:50.918 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_0c9edcb9_2d99_4d92_b885_e21d7a56dda8 = plt.xscale("linear")
+2022-03-21_23:59:50.918 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a01a9a51_084a_4901_9cca_b4acbbb98b92 = plt.yscale("linear")
+2022-03-21_23:59:50.918 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6d43e30c_cf7c_4b31_a0da_503eea23879b = plt.xlabel("value")
+2022-03-21_23:59:50.918 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9c33d0f6_5007_4928_ae40_225a04d42321 = plt.ylabel("value")
+2022-03-21_23:59:50.918 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d72c7bce_edb7_4aa1_a215_82b459c6463a = plt.text(1.0,1.0,"Days")
+2022-03-21_23:59:50.918 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-21_23:59:50.918 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fae51beb_0554_4102_a7ef_883348001a95 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-21_23:59:50.925 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896390921-0\exec.py]
+2022-03-21_23:59:51.780 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d5a42a78_8c30_418f_9594_65864433fb28 = plt.plot(np.array([80.1532, 80.0899, 81.3293, 80.7188, 80.2967, 81.1147, 80.9863]),ls="-",label="BGN",lw=3.0)
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8cce3fd7_f339_40aa_bf02_47aacf1368da = plt.xscale("linear")
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8459b04e_04a7_4ad6_a682_c0a352003eec = plt.yscale("linear")
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_99d85d78_c117_4c46_ad4e_d6f4f65e077a = plt.xlabel("value")
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9134d9e8_b994_40c6_83cd_0af3061d0559 = plt.ylabel("value")
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_20444740_3d1b_471a_8825_cc8f8e55b360 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:04:18.513 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_93f0ebf1_38e8_43f7_ae7b_ac1f5a14bd22 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:04:18.514 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896658513-0\exec.py]
+2022-03-22_00:04:19.368 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:04:33.151 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a6439633_edfb_420c_a5b9_d00184d58314 = plt.plot(np.array([80.1532, 80.0899, 81.3293, 80.7188, 80.2967, 81.1147, 80.9863, 81.0335, 80.9484, 80.9484, 80.9484, 81.4094, 81.2987, 81.2226, 81.3342, 81.3386, 79.7664, 79.4718, 79.5729, 78.7992, 78.5646, 78.4083, 78.5451, 78.3652, 78.2001, 78.3980, 78.7071, 78.0964, 77.9419, 77.8689]),ls="-",label="BGN",lw=3.0)
+2022-03-22_00:04:33.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_11f7bd7a_4c4b_4ad0_96e8_c09bdca2deac = plt.xscale("linear")
+2022-03-22_00:04:33.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_137b49b4_50ad_480f_9846_48e256ceec14 = plt.yscale("linear")
+2022-03-22_00:04:33.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_23d8f7ae_4282_4a50_a659_12e53e036830 = plt.xlabel("value")
+2022-03-22_00:04:33.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_76d7ebab_e406_48d3_aa13_4cd594ad293b = plt.ylabel("value")
+2022-03-22_00:04:33.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e07cac9b_d549_4c28_892a_87dd16b8fe45 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:04:33.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:04:33.152 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_427dd974_28bb_4ea1_b1ea_5a3a3f00adc0 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:04:33.153 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896673152-0\exec.py]
+2022-03-22_00:04:34.003 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:05:39.796 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8ab8e390_6e13_40f4_a749_2731c987e3e4 = plt.plot(np.array([59.9965, 60.40, 63.99, 69.08, 66.29, 65.55, 67.01, 68.86, 69.87, 71.87, 76.18, 78.02, 79.24, 79.97, 75.48, 74.82, 70.71, 68.27, 74.02, 73.12, 66.86, 71.72, 65.53, 61.74, 66.11, 70.74, 65.26, 71.39, 73.79, 67.05]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:05:39.796 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_91577de0_3f13_47e0_96db_8ebf424ca383 = plt.plot(np.array([74.9362, 79.16, 86.66, 89.57, 86.19, 90.08, 95.34, 103.24, 109.57, 119.60, 130.70, 132.02, 143.23, 153.30, 153.08, 165.24, 153.84, 156.59, 171.90, 158.41, 170.72, 168.30, 163.91, 159.18, 163.31, 160.23, 162.62, 165.86, 167.48, 183.76]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:05:39.796 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d9b97cc8_d48b_404e_ba65_a6adc02f9804 = plt.xscale("linear")
+2022-03-22_00:05:39.796 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_00b3990d_3f4e_470b_a265_f27b86e56bf2 = plt.yscale("linear")
+2022-03-22_00:05:39.796 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_945601fc_6a5f_4bef_9132_2f77a6402eb6 = plt.xlabel("value")
+2022-03-22_00:05:39.796 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d3a43b28_e7f8_4999_a3e1_ea97b8b06b08 = plt.ylabel("value")
+2022-03-22_00:05:39.796 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_70167a07_ea69_4f04_9813_6fa69db4a1a7 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:05:39.797 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:05:39.797 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ee1f0a82_8f39_44a6_9154_4a943fc4f345 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:05:39.797 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896739797-0\exec.py]
+2022-03-22_00:05:40.651 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:09:18.093 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_cc242bf6_9c67_4be5_9e18_8429c97540ff = plt.plot(np.array([74.9362, 76.67, 72.99, 74.92, 77.42, 73.10, 76.04, 73.59, 77.83, 76.89, 80.30, 86.27, 80.90, 79.38, 80.85, 83.23, 91.43, 83.59, 87.64, 95.86, 89.73, 96.78, 89.22, 96.79, 105.83, 102.22, 110.86, 103.65, 106.77, 111.71]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_16a2e45f_94c0_483a_9105_068d3e15c639 = plt.plot(np.array([59.9965, 61.54, 58.10, 63.17, 65.84, 60.53, 60.99, 56.67, 58.74, 61.60, 61.05, 61.09, 58.53, 58.66, 59.84, 65.57, 69.47, 64.36, 68.47, 66.28, 71.03, 65.49, 59.24, 58.04, 53.40, 50.49, 50.00, 49.34, 48.52, 46.33]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2d676317_8c7a_4017_add6_b2b0e01dfba9 = plt.xscale("linear")
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c6163b56_7391_4778_8d02_aca4d2494f2f = plt.yscale("linear")
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_246edfde_62fd_4011_a003_2c78908142da = plt.xlabel("value")
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d5169aee_781d_4c40_bfba_0bc7efb1fd3d = plt.ylabel("value")
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ba1e7846_4599_49b1_bbd9_034408d8c95f = plt.text(1.0,1.0,"Days")
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:09:24.445 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_0f9198ee_6553_41d1_afba_71b360fc3f8d = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:09:24.461 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896964445-0\exec.py]
+2022-03-22_00:09:25.321 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:09:27.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fe3cbda5_b644_46fb_b403_911c7af7f41f = plt.plot(np.array([74.9362, 82.36, 75.85, 78.42, 71.57, 75.18, 77.96, 73.69, 74.07, 76.36, 75.17, 72.60, 73.18, 76.60, 76.82, 80.19, 86.85, 87.06, 83.12, 79.41, 77.61, 79.32, 79.07, 74.66, 69.49, 63.79, 62.02, 60.37, 61.11, 55.81]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:09:27.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a2891df4_479f_43e7_9ecf_b7c67a08e6c2 = plt.plot(np.array([59.9965, 62.81, 58.86, 59.94, 56.95, 55.50, 57.55, 57.75, 59.54, 55.31, 52.49, 57.25, 57.86, 53.11, 57.92, 54.61, 56.26, 51.18, 54.82, 58.79, 59.57, 63.32, 60.47, 56.91, 59.91, 63.92, 59.12, 56.85, 61.41, 64.55]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:09:27.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_80391f54_8219_4061_b7b3_f4f12a18dd5f = plt.xscale("linear")
+2022-03-22_00:09:27.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_97d55234_6a01_4eda_b02c_f4f9f61004aa = plt.yscale("linear")
+2022-03-22_00:09:27.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_dfa4c16c_3c1a_4c83_af64_af9c18eeb7d8 = plt.xlabel("value")
+2022-03-22_00:09:27.006 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fceac1ad_2c56_4a2b_8ceb_f02be461e89c = plt.ylabel("value")
+2022-03-22_00:09:27.007 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_35e556a2_1a03_4986_a261_45e01d64dfe3 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:09:27.007 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:09:27.007 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_daf605e1_45d6_4487_9a03_244559268085 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:09:27.008 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896967007-0\exec.py]
+2022-03-22_00:09:27.865 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:09:29.045 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d3d3563f_68f7_4c66_9253_df0f85afd1bc = plt.plot(np.array([74.9362, 79.71, 84.36, 91.86, 89.48, 88.49, 85.49, 90.69, 82.88, 77.55, 82.34, 78.94, 79.79, 79.92, 81.58, 81.78, 85.00, 83.45, 84.70, 76.44, 77.88, 82.80, 75.22, 78.28, 83.22, 83.61, 83.12, 77.10, 79.89, 78.34]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:09:29.045 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b245531b_e51f_48bb_a001_f8ebb5c64298 = plt.plot(np.array([59.9965, 64.98, 59.83, 65.38, 60.85, 55.20, 56.75, 57.31, 53.51, 57.48, 57.90, 56.55, 57.77, 52.40, 55.20, 60.26, 54.38, 58.60, 57.62, 54.82, 52.17, 51.29, 47.30, 45.65, 45.18, 42.07, 44.97, 48.52, 49.50, 53.24]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:09:29.045 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e605b74d_3ec8_46a6_b255_947928d85db7 = plt.xscale("linear")
+2022-03-22_00:09:29.046 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_3177af95_e2f2_43a3_a054_35d7dad8ab37 = plt.yscale("linear")
+2022-03-22_00:09:29.046 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_be7d0329_80c7_4329_b32c_ad03c7839347 = plt.xlabel("value")
+2022-03-22_00:09:29.046 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_1de701b1_b048_4395_a82f_82b8c711afb1 = plt.ylabel("value")
+2022-03-22_00:09:29.046 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ae3b5554_0055_4c18_a415_1cefdaa00502 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:09:29.046 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:09:29.046 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9e997260_b45e_4cd1_98a3_939186e4c213 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:09:29.047 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896969046-0\exec.py]
+2022-03-22_00:09:29.901 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c889659b_7247_4900_86ff_ab16e4b2739a = plt.plot(np.array([74.9362, 78.40, 81.91, 77.23, 74.21, 77.83, 76.80, 76.88, 77.50, 73.15, 75.01, 80.23, 76.14, 72.97, 76.11, 83.23, 77.54, 75.12, 70.28, 69.35, 62.43, 56.32, 57.98, 58.09, 60.41, 58.87, 62.83, 58.08, 56.33, 54.25]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_794eee72_f1bf_49f6_a2b2_9c5e3ecb7e57 = plt.plot(np.array([59.9965, 63.77, 62.58, 66.79, 61.10, 57.30, 53.68, 56.25, 52.88, 50.19, 51.71, 48.61, 51.00, 47.30, 44.30, 47.82, 46.73, 51.17, 47.86, 43.41, 39.20, 39.21, 42.97, 46.37, 45.22, 44.08, 44.14, 44.44, 41.78, 40.54]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_52b3a73a_946e_46d5_8872_62cfbb954e60 = plt.xscale("linear")
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_db285b2c_24b6_481e_9154_003373ff47e3 = plt.yscale("linear")
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c374faf3_08a2_46e6_9e14_7378f2d99ed1 = plt.xlabel("value")
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_25b912b1_ad4b_4880_9db1_4e101e36cefd = plt.ylabel("value")
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a5f09229_49cb_4ba3_9aa1_1c6329fe363f = plt.text(1.0,1.0,"Days")
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:09:31.235 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_346a709e_4d1b_4f40_88cc_c384a78e35e3 = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:09:31.236 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896971235-0\exec.py]
+2022-03-22_00:09:32.082 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:09:33.193 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_a8cc6f22_b3cc_482a_b571_afbd4a49ea68 = plt.plot(np.array([74.9362, 67.64, 70.89, 70.73, 76.18, 74.95, 70.45, 63.51, 68.34, 74.34, 69.62, 73.16, 71.21, 75.00, 78.51, 70.93, 71.68, 75.94, 73.70, 80.75, 73.53, 74.62, 69.23, 70.31, 63.45, 65.72, 62.64, 63.25, 69.05, 69.96]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:09:33.193 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_823b6172_0d32_4d00_9eb1_6cdf37ae5ad8 = plt.plot(np.array([59.9965, 56.03, 55.39, 58.14, 52.97, 50.79, 50.07, 52.92, 56.87, 58.36, 52.96, 52.81, 56.00, 51.00, 49.20, 49.99, 47.00, 48.36, 44.92, 43.98, 46.62, 43.64, 40.44, 38.67, 38.08, 38.20, 40.74, 38.09, 35.65, 33.75]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:09:33.193 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_aa862c15_5078_45fb_9143_40e9e38caa43 = plt.xscale("linear")
+2022-03-22_00:09:33.194 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_463a9d31_c2f3_47e7_ab91_d5cab59fbab0 = plt.yscale("linear")
+2022-03-22_00:09:33.194 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_b76a17d7_2b50_4081_a1b3_5a367b205584 = plt.xlabel("value")
+2022-03-22_00:09:33.194 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_57e4b739_ce39_4c64_ae73_be1b3ce5138d = plt.ylabel("value")
+2022-03-22_00:09:33.194 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_66e899d3_84c7_4d0d_a649_0467cd58f788 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:09:33.194 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:09:33.194 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4b580c09_8228_450a_8a9f_aff4a44e663e = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:09:33.195 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896973194-0\exec.py]
+2022-03-22_00:09:34.040 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:09:44.797 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_87ed3bc7_33f6_4bd5_b604_5ca411c9458a = plt.plot(np.array([85.1282, 76.81, 74.04, 74.55, 70.82, 73.71, 71.07, 69.08, 68.35, 74.86, 79.18, 85.34, 87.02, 91.27, 87.03, 84.16, 76.53, 69.06, 65.76, 69.31, 67.17, 66.11, 69.79, 64.17, 69.90, 69.12, 74.69, 71.67, 73.75, 80.88]),ls="-",label="EUR",lw=3.0)
+2022-03-22_00:09:44.797 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e4e4342d_c26f_424b_97c8_fdf1fc33eafe = plt.plot(np.array([74.9362, 70.95, 65.94, 61.97, 64.39, 65.65, 62.52, 56.27, 53.15, 56.66, 55.77, 55.84, 59.06, 54.90, 52.52, 53.88, 56.68, 52.37, 57.53, 56.89, 51.76, 47.05, 42.66, 38.57, 39.03, 42.18, 40.22, 40.05, 41.23, 42.09]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_821a0e24_b1fc_47dd_bb4c_ba3d0be338e1 = plt.plot(np.array([59.9965, 61.30, 56.46, 52.11, 54.63, 56.19, 52.84, 50.70, 45.88, 46.53, 42.23, 38.80, 34.99, 36.48, 37.19, 40.79, 40.32, 43.87, 46.96, 48.71, 47.56, 49.18, 50.84, 54.65, 56.97, 54.99, 58.84, 54.35, 59.23, 56.59]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_0470be70_96ad_455a_928c_677ab5abaa62 = plt.xscale("linear")
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_84068ca1_453d_4d30_8c94_986bd397aeec = plt.yscale("linear")
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_216e7088_7e03_4329_be05_850df9bf21ce = plt.xlabel("value")
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4abb9576_2612_4963_85e1_b01cf0cd5e6b = plt.ylabel("value")
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6d8238f1_b954_41a8_925b_7719d1effe75 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:09:44.798 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_bebe8e96_9780_48fb_974b_2c0dc26419cf = plt.savefig("src/main/resources/graphics.png",dpi=200.0)
+2022-03-22_00:09:44.799 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647896984798-0\exec.py]
+2022-03-22_00:09:45.657 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:11:16.481 [main] INFO  ru.lebedev.liga.Main - Приложение стартовало!
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f376a11e_3911_4cb2_8a94_e4cd3f0395b4 = plt.plot(np.array([74.9362, 67.72, 72.16, 77.89, 83.69, 87.61, 90.07, 92.22, 90.34, 92.40, 92.00, 100.31, 94.50, 99.80, 104.63, 102.00, 111.38, 107.60, 116.29, 107.45, 104.34, 104.58, 110.88, 118.53, 117.40, 124.54, 123.70, 122.88, 134.06, 123.35]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_473a06cb_af3b_4b03_857b_86fcca05f463 = plt.plot(np.array([59.9965, 55.00, 50.13, 51.09, 54.14, 53.90, 57.55, 51.92, 56.30, 60.02, 61.17, 66.37, 65.46, 61.96, 55.80, 53.44, 48.92, 45.31, 45.02, 44.33, 44.19, 47.84, 46.65, 49.85, 53.93, 58.80, 61.11, 62.51, 67.78, 62.09]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_01be70de_3957_4087_9f1d_e3c431195bcf = plt.plot(np.array([85.1282, 81.34, 78.71, 72.49, 66.94, 64.08, 69.20, 70.75, 67.09, 71.31, 71.69, 67.78, 61.69, 55.86, 53.62, 55.69, 59.27, 61.05, 66.56, 72.12, 72.69, 65.85, 67.17, 73.60, 71.40, 75.07, 80.69, 75.41, 78.48, 84.85]),ls="-",label="EUR",lw=3.0)
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2e439c79_8cbe_4fbb_a626_a858cbf7b80c = plt.xscale("linear")
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_20f84a63_e148_451c_afc9_1521d90b0462 = plt.yscale("linear")
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d2a71c3e_bfac_47e8_8eb0_f1c8a7f22b81 = plt.xlabel("value")
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6ebb9d8a_ac6b_4892_ab17_1a47b407686e = plt.ylabel("value")
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c27c099d_4644_40d5_aa92_6288a6d4b762 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c7ead889_1e54_4181_bca4_09fe040d656c = plt.savefig("graphics.png",dpi=200.0)
+2022-03-22_00:11:21.549 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647897081549-0\exec.py]
+2022-03-22_00:11:22.427 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f4c55be7_94ab_4b09_8722_ed7aa897ac8c = plt.plot(np.array([74.9362, 78.32, 70.61, 65.09, 65.35, 71.68, 77.01, 84.34, 90.19, 81.69, 88.70, 96.83, 103.45, 103.86, 103.32, 108.85, 106.41, 111.36, 116.19, 109.59, 111.07, 109.92, 110.35, 102.42, 107.86, 117.99, 106.93, 117.36, 120.81, 123.40]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_59d35dad_8058_4f14_9ac0_0b595175a536 = plt.plot(np.array([59.9965, 64.71, 65.86, 61.57, 55.93, 59.51, 60.91, 66.20, 67.24, 68.44, 67.14, 63.49, 58.58, 57.52, 62.00, 56.54, 53.99, 49.94, 49.37, 46.62, 46.19, 43.93, 45.89, 49.51, 49.87, 51.86, 52.39, 53.86, 56.82, 53.96]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e294db55_5965_4268_8303_96bfc92616d4 = plt.plot(np.array([85.1282, 85.97, 88.60, 89.42, 84.87, 82.67, 86.74, 89.19, 91.21, 83.19, 79.12, 73.26, 74.16, 69.74, 74.03, 70.22, 67.12, 73.49, 79.92, 75.57, 78.33, 72.39, 70.50, 75.68, 80.39, 73.48, 71.46, 71.55, 69.73, 67.79]),ls="-",label="EUR",lw=3.0)
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_47e75a32_dd7e_4904_a6dc_4de4759b2bb7 = plt.xscale("linear")
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_eff26138_b43e_44b5_8507_19e3ea586112 = plt.yscale("linear")
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_6e53e919_2495_4a7a_b7a6_e9094ddc2e4e = plt.xlabel("value")
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_7b41fcc2_0d6c_4f8d_9900_ac79f9e2e219 = plt.ylabel("value")
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9fe8b007_70a1_4c37_82c5_12c25d4df291 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:11:24.300 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_7dc80936_56d9_48cc_85cf_0635cdd24b3c = plt.savefig("graphics.png",dpi=200.0)
+2022-03-22_00:11:24.301 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647897084300-0\exec.py]
+2022-03-22_00:11:25.187 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_27d7bc12_3c72_43d0_be99_9bdb28a2fb57 = plt.plot(np.array([74.9362, 73.05, 71.62, 75.03, 74.45, 80.78, 88.34, 91.50, 87.84, 90.71, 93.14, 87.89, 80.40, 79.72, 75.77, 79.26, 72.58, 68.64, 74.02, 68.76, 74.55, 74.34, 74.79, 75.82, 79.22, 78.98, 79.72, 87.32, 86.38, 92.78]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5ab6943f_314c_4e6d_bc80_8c5e6479dfd6 = plt.plot(np.array([59.9965, 56.58, 53.26, 58.41, 56.86, 56.19, 61.49, 65.09, 58.91, 63.31, 68.92, 71.54, 73.44, 70.45, 69.54, 76.22, 69.62, 76.44, 78.94, 75.40, 69.63, 74.33, 71.95, 65.88, 59.97, 64.68, 64.13, 69.42, 69.61, 70.56]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_ddbe89d8_2b93_4ffe_96a0_ea47074e4838 = plt.plot(np.array([85.1282, 80.68, 81.00, 82.54, 88.61, 84.07, 77.85, 82.57, 83.53, 91.57, 94.47, 85.49, 89.45, 89.83, 87.85, 96.37, 88.15, 86.26, 92.54, 87.17, 87.64, 94.37, 85.04, 92.74, 92.35, 93.86, 102.32, 93.84, 90.89, 83.05]),ls="-",label="EUR",lw=3.0)
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_94a05f67_e7f0_4c99_882f_bbedd3cb7cd1 = plt.xscale("linear")
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_7c2398de_c872_4c1a_a3e5_65feae4b02e1 = plt.yscale("linear")
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_772535d5_51ea_4c6b_8bc0_bdf34fe44994 = plt.xlabel("value")
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_8d3b3743_981d_4617_8c92_da3b5dcec138 = plt.ylabel("value")
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_9b8985cc_1fda_404b_8cfb_a8be9121e998 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:11:26.640 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_d22f22c2_f573_4759_9ac4_19fba890cc23 = plt.savefig("graphics.png",dpi=200.0)
+2022-03-22_00:11:26.641 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647897086640-0\exec.py]
+2022-03-22_00:11:27.498 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_00:12:17.584 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_831cd090_9820_4e10_924c_b26b42cae099 = plt.plot(np.array([74.9362, 70.52, 76.75, 69.10, 70.96, 72.52, 78.58, 84.12, 90.94, 87.70, 83.23, 85.83, 77.47, 80.76, 83.91, 91.87, 90.10, 90.28, 96.70, 91.42, 99.95, 106.41, 114.49, 125.19, 134.28, 147.07, 153.56, 155.21, 142.45, 129.47]),ls="-",label="USD",lw=3.0)
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c75b3587_058b_47e4_9a14_d3a9288154ee = plt.plot(np.array([59.9965, 55.21, 50.42, 52.38, 54.04, 54.07, 57.06, 57.69, 62.23, 60.61, 64.34, 59.98, 54.41, 58.08, 63.66, 68.57, 61.74, 60.43, 65.96, 65.79, 64.14, 66.54, 65.93, 61.23, 56.24, 50.79, 46.21, 47.31, 45.78, 47.48]),ls="-",label="TRY",lw=3.0)
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_c2833788_9c08_4a75_aa44_b8524e40be3e = plt.xscale("linear")
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_5d1f4592_7c2b_4333_bf8e_33c406b09692 = plt.yscale("linear")
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_e8d7b415_11e8_4cab_ba23_dc12f465f657 = plt.xlabel("value")
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_62657955_3adc_4928_b457_41dc7ec55ba1 = plt.ylabel("value")
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4427b0d2_b540_41ed_b434_27b32cd94ed1 = plt.text(1.0,1.0,"Days")
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_00:12:17.585 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_362f332f_4cb7_4a4d_a818_fb3311abd05f = plt.savefig("graphics.png",dpi=200.0)
+2022-03-22_00:12:17.586 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647897137585-0\exec.py]
+2022-03-22_00:12:18.446 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
