@@ -14,6 +14,8 @@ public abstract class AbstractCommand {
     private final CurrencyRepository repository;
     private final String command;
     private ForecastService service;
+    private final static String SMILE_CLOCK = "\uD83D\uDD70";
+    private final static String SMILE_CASH = "\uD83D\uDCB8";
 
     public AbstractCommand(CurrencyRepository repository, ForecastService service, String command) {
         this.repository = repository;
@@ -46,20 +48,13 @@ public abstract class AbstractCommand {
     public Currency getCurrency() {
         String[] commands = command.split(" ");
         String curryncies = commands[CURRENCY_INDEX].toUpperCase();
-        Currency currency = Currency.valueOf(curryncies);
-
-        return currency;
+        return Currency.valueOf(curryncies);
     }
 
 
     public String correctOutput(CurrencyModel dayPrediction) {
-        return String.format("%s \uD83D\uDD70 - %s \uD83D\uDCB8", dayPrediction.getDate().format(DataUtil.OUTPUT_FORMATTER),
+        return String.format("%s - "+SMILE_CLOCK+" %s "+SMILE_CASH, dayPrediction.getDate().format(DataUtil.OUTPUT_FORMATTER),
                 dayPrediction.getValue().multiply(dayPrediction.getNominal()).setScale(2, RoundingMode.FLOOR));
-    }
-
-    public String writeMessage() {
-        String s = "Вы ввели: " + command + " -это неверная команда\n Введите /info для справки";
-        return s;
     }
 
 }

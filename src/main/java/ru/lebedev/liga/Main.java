@@ -20,11 +20,11 @@ public class Main {
     public static void main(String[] args) {
         LOGGER.info("Приложение стартовало!");
 
-        String command = "rate USD -date tomorrow -alg moon";
-        CurrencyRepository repository = new CurrencyRepositoryImpl();
-        ForecastService service = new ChooseAlgorithm(command,repository).returnNeedService();
-         String execute = new ChoosePrediction(repository, service, command).commandExecute();
-        System.out.println(execute);
+//        String command = "rate USD -date 19.03.2022 -alg moon";
+//        CurrencyRepository repository = new CurrencyRepositoryImpl();
+//        ForecastService service = new ChooseAlgorithm(command,repository).returnNeedService();
+//         String execute = new ChoosePrediction(repository, service, command).commandExecute();
+//        System.out.println(execute);
 
         try {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);

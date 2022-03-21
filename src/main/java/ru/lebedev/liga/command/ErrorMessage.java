@@ -7,6 +7,6 @@ public class ErrorMessage extends TelegramDefaultCommands implements Command{
 
     @Override
     public String commandExecute() {
-        return "Вы ввели: " + super.getCommand()+ " -это неверная команда\n Введите /info для справки";
+        return "Вы ввели: " + super.getCommand()+ " -это неверная команда\n Введите /info для справки"+ SMILE_VERY_BAD;
     }
 }

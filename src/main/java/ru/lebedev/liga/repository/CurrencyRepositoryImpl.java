@@ -53,9 +53,4 @@ public class CurrencyRepositoryImpl implements CurrencyRepository {
         return list;
     }
 
-    @Override
-    public void addRate(CurrencyModel model, Currency currency) {
-        List<CurrencyModel> list = getAllRates(currency);
-        list.add(model);
-    }
 }

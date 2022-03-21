@@ -32,10 +32,7 @@ public class GraphPrediction {
     }
 
     public void commandExecute() throws PythonExecutionException, IOException {
-        if (CheckCorrectCommand.isValidCommand(command)) {//vse peredelat
-            new ConcretDate(repository, service, command).writeMessage();
-            return;
-        }
+       //peredelat
         String[] splitBySpace = command.split(" ");
         String currencies = splitBySpace[1];
         String weekOrMonth = splitBySpace[2];

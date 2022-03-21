@@ -9,6 +9,7 @@ import ru.lebedev.liga.service.MoonAlgorithm;
 import java.util.Arrays;
 
 public class CommandslAlgOptionImpl implements AlgOption {
+
     public final static String ACTUAL = "actual";
     public final static String REGRESS = "regress";
     public final static String MISTIC_OR_MOON = "moon";
@@ -17,13 +18,13 @@ public class CommandslAlgOptionImpl implements AlgOption {
     @Override
     public ForecastService chooseAlg(CurrencyRepository repository, String command) {
         String[] wordsInCommand = command.toLowerCase().split(" ");
-        if (Arrays.asList(wordsInCommand).contains(ACTUAL) && Arrays.asList(wordsInCommand).contains(ARGUMENT)) {
+        if (Arrays.asList(wordsInCommand).contains(ACTUAL)) {
             return new Actual(repository);
         }
-        if (Arrays.asList(wordsInCommand).contains(ARGUMENT) && Arrays.asList(wordsInCommand).contains(REGRESS)) {
+        if (Arrays.asList(wordsInCommand).contains(REGRESS)) {
             return new LineurRegressionImpl(repository);
         }
-        if (Arrays.asList(wordsInCommand).contains(ARGUMENT) && Arrays.asList(wordsInCommand).contains(MISTIC_OR_MOON)) {
+        if (Arrays.asList(wordsInCommand).contains(MISTIC_OR_MOON)) {
             return new MoonAlgorithm(repository);
         }
         return null;
