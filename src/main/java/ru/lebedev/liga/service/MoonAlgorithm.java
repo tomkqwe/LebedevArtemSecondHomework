@@ -14,15 +14,19 @@ public class MoonAlgorithm extends AbstractAlgorithm {
 
     private final static int YEAR_NOW = 2022;
     private final static int ONE_YEAR_AGO = 2021;
-    private final static List<LocalDate> FULL_MOON_2122 = Arrays.asList(LocalDate.of(YEAR_NOW, 1, 18)
-            , LocalDate.of(YEAR_NOW, 2, 16), LocalDate.of(YEAR_NOW, 3, 18), LocalDate.of(YEAR_NOW, 4, 16),
-            LocalDate.of(YEAR_NOW, 5, 16), LocalDate.of(YEAR_NOW, 6, 14), LocalDate.of(YEAR_NOW, 7, 13)
-            , LocalDate.of(YEAR_NOW, 8, 12), LocalDate.of(YEAR_NOW, 9, 10), LocalDate.of(YEAR_NOW, 10, 9)
-            , LocalDate.of(YEAR_NOW, 11, 8), LocalDate.of(YEAR_NOW, 12, 8), LocalDate.of(ONE_YEAR_AGO, 1, 28)
-            , LocalDate.of(ONE_YEAR_AGO, 2, 27), LocalDate.of(ONE_YEAR_AGO, 3, 28), LocalDate.of(ONE_YEAR_AGO, 4, 27),
-            LocalDate.of(ONE_YEAR_AGO, 5, 26), LocalDate.of(ONE_YEAR_AGO, 6, 24), LocalDate.of(ONE_YEAR_AGO, 7, 24)
-            , LocalDate.of(ONE_YEAR_AGO, 8, 22), LocalDate.of(ONE_YEAR_AGO, 9, 21), LocalDate.of(ONE_YEAR_AGO, 10, 20)
-            , LocalDate.of(ONE_YEAR_AGO, 11, 19), LocalDate.of(ONE_YEAR_AGO, 12, 19));
+    private final static int FIRST_ELEMENT = 0;
+    private final static int TWO = 2;
+    private final static int ONE = 1;
+    private final static String TEN_PERCENT = "0.1";
+    private final static List<LocalDate> FULL_MOON_2122 = Arrays.asList(LocalDate.of(YEAR_NOW, 1, 18),
+            LocalDate.of(YEAR_NOW, 2, 16), LocalDate.of(YEAR_NOW, 3, 18), LocalDate.of(YEAR_NOW, 4, 16),
+            LocalDate.of(YEAR_NOW, 5, 16), LocalDate.of(YEAR_NOW, 6, 14), LocalDate.of(YEAR_NOW, 7, 13),
+            LocalDate.of(YEAR_NOW, 8, 12), LocalDate.of(YEAR_NOW, 9, 10), LocalDate.of(YEAR_NOW, 10, 9),
+            LocalDate.of(YEAR_NOW, 11, 8), LocalDate.of(YEAR_NOW, 12, 8), LocalDate.of(ONE_YEAR_AGO, 1, 28),
+            LocalDate.of(ONE_YEAR_AGO, 2, 27), LocalDate.of(ONE_YEAR_AGO, 3, 28), LocalDate.of(ONE_YEAR_AGO, 4, 27),
+            LocalDate.of(ONE_YEAR_AGO, 5, 26), LocalDate.of(ONE_YEAR_AGO, 6, 24), LocalDate.of(ONE_YEAR_AGO, 7, 24),
+            LocalDate.of(ONE_YEAR_AGO, 8, 22), LocalDate.of(ONE_YEAR_AGO, 9, 21), LocalDate.of(ONE_YEAR_AGO, 10, 20),
+            LocalDate.of(ONE_YEAR_AGO, 11, 19), LocalDate.of(ONE_YEAR_AGO, 12, 19));
 
     public MoonAlgorithm(CurrencyRepository repository) {
         super(repository);
@@ -31,17 +35,17 @@ public class MoonAlgorithm extends AbstractAlgorithm {
 
     @Override
     public CurrencyModel getDayPrediction(Currency currency, int index) {
-        List<LocalDate> fullMoonOrderByDesc = getOrderbydesc();
+        List<LocalDate> fullMoonOrderByDesc = orderByDesc();
 
         List<CurrencyModel> allListRates = super.getRepository().getAllListRates(currency);
 
-        LocalDate actualDateAndFilter = getActualDateForPredictionAndFilter(index);//
+        LocalDate actualDateAndFilter = TOMORROW.plusDays(index);
 
         List<CurrencyModel> threeFullMoonDates = collectThreeFullMoonDates(fullMoonOrderByDesc, allListRates);
 
         BigDecimal prediction = threeAverageMoonLightsValue(threeFullMoonDates);
 
-        BigDecimal nominal = allListRates.get(allListRates.size() - 1).getNominal();
+        BigDecimal nominal = allListRates.get(FIRST_ELEMENT).getNominal();
 
         return new CurrencyModel(nominal, actualDateAndFilter, prediction, currency);
     }
@@ -58,37 +62,33 @@ public class MoonAlgorithm extends AbstractAlgorithm {
 
     }
 
-    private List<CurrencyModel> collectThreeFullMoonDates(List<LocalDate> fullmoonOrderbydesc, List<CurrencyModel> allListRates) {
+    private List<CurrencyModel> collectThreeFullMoonDates(List<LocalDate> fullMoon, List<CurrencyModel> allListRates) {
         return allListRates
                 .stream()
-                .filter(model -> fullmoonOrderbydesc.contains(model.getDate()))
+                .filter(model -> fullMoon.contains(model.getDate()))
                 .sorted(Comparator.comparing(CurrencyModel::getDate).reversed())
                 .limit(3)
                 .collect(Collectors.toList());
     }
 
-    private List<LocalDate> getOrderbydesc() {
+    private List<LocalDate> orderByDesc() {
         return FULL_MOON_2122
                 .stream()
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList());
     }
 
-    private LocalDate getActualDateForPredictionAndFilter(int index) {
-        return TOMORROW.plusDays(index);
-    }
-
     private CurrencyModel getReccurentPrediction(Currency currency, ArrayList<CurrencyModel> list) {
         CurrencyModel recurrenctPrediction = list.get(list.size() - 1);
         BigDecimal reccurentValue = recurrenctPrediction.getValue();
 
-        BigDecimal tenPercent = reccurentValue.multiply(new BigDecimal("0.1"));
+        BigDecimal tenPercent = reccurentValue.multiply(new BigDecimal(TEN_PERCENT));
 
         BigDecimal misunTenPercent = reccurentValue.subtract(tenPercent);
         BigDecimal addTenPercent = reccurentValue.add(tenPercent);
 
         BigDecimal resultValue = generateRandomNumbers(misunTenPercent, addTenPercent);
-        resultValue = resultValue.setScale(2, RoundingMode.FLOOR);
+        resultValue = resultValue.setScale(TWO, RoundingMode.FLOOR);
 
         BigDecimal nominal = recurrenctPrediction.getNominal();
         LocalDate resultDate = recurrenctPrediction.getDate().plusDays(1);
@@ -98,7 +98,7 @@ public class MoonAlgorithm extends AbstractAlgorithm {
 
     private BigDecimal generateRandomNumbers(BigDecimal misunTenPercent, BigDecimal addTenPercent) {
         double[] doubles = new Random()
-                .doubles(1, misunTenPercent.doubleValue(), addTenPercent.doubleValue())
+                .doubles(ONE, misunTenPercent.doubleValue(), addTenPercent.doubleValue())
                 .toArray();
         return BigDecimal.valueOf(doubles[0]);
     }

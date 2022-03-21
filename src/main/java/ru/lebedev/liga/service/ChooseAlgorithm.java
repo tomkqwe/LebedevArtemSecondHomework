@@ -14,16 +14,6 @@ public class ChooseAlgorithm {
     }
 
     public ForecastService returnNeedService() {
-//        String[] commands = command.split(" ");
-//        String algoToSwitchCase = commands[commands.length - 1];
-//        if (algoToSwitchCase.matches("(list)|(graph)")) {
-//            algoToSwitchCase = commands[commands.length - 2];
-//        }
-//        switch (algoToSwitchCase) {
-//            case "moon" -> service = new MoonAlgorithm(repository);
-//            case "regress" -> service = new LineurRegressionImpl(repository);
-//            case "actual" -> service = new Actual(repository);
-//        }
         service = new CommandslAlgOptionImpl().chooseAlg(repository, command);
         return service;
     }

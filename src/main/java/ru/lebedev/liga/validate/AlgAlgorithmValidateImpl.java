@@ -1,9 +1,5 @@
 package ru.lebedev.liga.validate;
 
-import org.checkerframework.checker.units.qual.A;
-
-import java.util.Locale;
-
 public class AlgAlgorithmValidateImpl implements Validate {
     private final static String MOON = "moon";
     private final static String ACTUAL = "actual";

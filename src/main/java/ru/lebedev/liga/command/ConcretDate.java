@@ -9,6 +9,7 @@ import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Objects;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -39,7 +40,7 @@ public class ConcretDate extends AbstractCommand implements Command {
         for (int i = 0; i < between; i++) {
             dayPrediction = service.getDayPrediction(currency, i);
         }
-        return correctOutput(dayPrediction);
+        return correctOutput(Objects.requireNonNull(dayPrediction));
     }
 
     private long getBetweenNowAndPredictionDate() {

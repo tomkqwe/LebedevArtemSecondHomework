@@ -8,12 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class GraphMonthOrWeekPrediction {
-    private ForecastService service;
-
-    public GraphMonthOrWeekPrediction(ForecastService service) {
-        this.service = service;
-    }
+public record GraphMonthOrWeekPrediction(ForecastService service) {
 
     public List<BigDecimal> getMonthPrediction(Currency currency) {
         return service
@@ -22,6 +17,7 @@ public class GraphMonthOrWeekPrediction {
                 .map(CurrencyModel::getValue)
                 .collect(Collectors.toList());
     }
+
     public List<BigDecimal> getWeekPrediction(Currency currency) {
         return service
                 .getWeekPrediction(currency)

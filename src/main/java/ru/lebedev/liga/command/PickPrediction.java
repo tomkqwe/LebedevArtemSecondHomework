@@ -48,7 +48,7 @@ public class PickPrediction {
             return new CommandPeriodDataOptionImpl().returnDatePeriodWhatYouWant(repository, service, messageFromUser);
         }
         if (wordsInMessage.contains(PERIOD) && CheckCorrectCommand.isValidGraph(messageFromUser)){
-            return new GraphPrediction(repository,service,messageFromUser);
+            return new GraphPrediction(service,messageFromUser);
         }
 
         return new ErrorMessage(messageFromUser);

@@ -47,7 +47,7 @@ public class CurrencyRepositoryImpl implements CurrencyRepository {
     public List<CurrencyModel> getAllListRates(Currency currency) {
         List<CurrencyModel> list = getAllRates(currency);
         list = list.stream()
-                .sorted(Comparator.comparing(CurrencyModel::getDate))
+                .sorted(Comparator.comparing(CurrencyModel::getDate).reversed())
                 .collect(Collectors.toList());
 
         return list;

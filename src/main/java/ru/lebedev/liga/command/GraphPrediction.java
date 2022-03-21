@@ -5,24 +5,24 @@ import com.github.sh0nk.matplotlib4j.PythonExecutionException;
 import com.github.sh0nk.matplotlib4j.builder.ScaleBuilder;
 import ru.lebedev.liga.command.GraphsCommands.GraphMonthOrWeekPrediction;
 import ru.lebedev.liga.model.Currency;
-import ru.lebedev.liga.repository.CurrencyRepository;
 import ru.lebedev.liga.service.ForecastService;
 
 import java.io.IOException;
 import java.math.BigDecimal;
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-public class GraphPrediction implements Command  {
-    private final CurrencyRepository repository;
-    private final ForecastService service;
-    private final String command;
+public class GraphPrediction implements Command {
     private final static String WEEK = "week";
     private final static String MONTH = "month";
-
+    private final static int SECOND_ELEMENT = 1;
+    private final static int FOURTH_ELEMENT = 3;
+    private final ForecastService service;
+    private final String command;
     private final Map<Currency, List<BigDecimal>> currencyListMap = new HashMap<>();
 
-    public GraphPrediction(CurrencyRepository repository, ForecastService service, String command) {
-        this.repository = repository;
+    public GraphPrediction(ForecastService service, String command) {
         this.service = service;
         this.command = command;
     }
@@ -33,7 +33,6 @@ public class GraphPrediction implements Command  {
 
     @Override
     public String commandExecute() {
-       //peredelat
         return returnGraphName(executeGraph());
 
     }
@@ -44,8 +43,8 @@ public class GraphPrediction implements Command  {
         addPlotBuilder(plt);
         plt.xscale(ScaleBuilder.Scale.linear);
         plt.yscale(ScaleBuilder.Scale.linear);
-        plt.xlabel("value");
-        plt.ylabel("value");
+        plt.xlabel("Date");
+        plt.ylabel("CurrencyValue");
         plt.text(1, 1, "Days");
         plt.title("Graph of my currency");
         returnGraphName(plt);
@@ -60,8 +59,8 @@ public class GraphPrediction implements Command  {
 
     private void splitAndCheckCommand() {
         String[] splitBySpace = command.split(" ");
-        String currencies = splitBySpace[1];
-        String weekOrMonth = splitBySpace[3];
+        String currencies = splitBySpace[SECOND_ELEMENT];
+        String weekOrMonth = splitBySpace[FOURTH_ELEMENT];
         if (weekOrMonth.equals(WEEK)) {
             initMapByWeek(currencies);
         } else if (weekOrMonth.equals(MONTH)) {

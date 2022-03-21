@@ -14,14 +14,6 @@ public class Main {
 
     public static void main(String[] args) {
         LOGGER.info("Приложение стартовало!");
-
-//        String command = "rate USD -period week -alg moon -output graph";
-//        CurrencyRepository repository = new CurrencyRepositoryImpl();
-//        ForecastService service = new ChooseAlgorithm(command,repository).returnNeedService();
-//        PickPrediction pickPrediction = new PickPrediction(repository, service, command);
-//        String execute = pickPrediction.pickCommandFromMessage().commandExecute();
-//        System.out.println(execute);
-
         try {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
             TelegramPCALB telegramPCALB = new TelegramPCALB();

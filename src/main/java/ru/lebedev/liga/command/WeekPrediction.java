@@ -29,7 +29,6 @@ public class WeekPrediction extends AbstractCommand implements Command {
     }
 
     private List<CurrencyModel> getListWithWeekPredictions() {
-//        ForecastService service = new ChooseNeedService(super.getCommand(), super.getRepository()).returnNeedService();
         ForecastService service = super.getService();
         return service.getWeekPrediction(super.getCurrency());
     }
