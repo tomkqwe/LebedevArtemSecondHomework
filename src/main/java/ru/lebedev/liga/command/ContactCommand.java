@@ -8,8 +8,7 @@ public class ContactCommand extends TelegramDefaultCommands implements Command {
 
     @Override
     public String commandExecute() {
-        writeLog();
-        return "По всем вопросам обращаться к @tomkqwe \uD83E\uDD17";
+        return "РџРѕ РІСЃРµРј РІРѕРїСЂРѕСЃР°Рј РѕР±СЂР°С‰Р°С‚СЊСЃСЏ Рє @tomkqwe"+SMILE_WITH_HANDS;
 
     }
 }

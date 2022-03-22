@@ -1,6 +1,5 @@
 package ru.lebedev.liga.view;
 
-import ru.lebedev.liga.Main;
 import ru.lebedev.liga.model.CurrencyModel;
 
 import java.time.format.DateTimeFormatter;
@@ -15,7 +14,7 @@ public class Console {
     }
 
     public String insertCommand() {
-        System.out.println("¬‚Â‰ËÚÂ ÍÓÏÏ‡Ì‰Û: ");
+        System.out.println("–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–º–∞–Ω–¥—É: ");
         return scanner.nextLine();
     }
 
@@ -24,9 +23,10 @@ public class Console {
     }
 
     public void printDayPrediction(CurrencyModel model) {
-        printMessage(String.format("%s - %s - %s",model.getNominal(), model.getDate().format(DateTimeFormatter.ISO_DATE), String.format("%.2f", model.getValue().multiply(model.getNominal()))));
+        printMessage(String.format("%s - %s - %s", model.getNominal(), model.getDate().format(DateTimeFormatter.ISO_DATE), String.format("%.2f", model.getValue().multiply(model.getNominal()))));
     }
-    public void printWeekPrediction(List<CurrencyModel> list){
+
+    public void printWeekPrediction(List<CurrencyModel> list) {
         list.forEach(this::printDayPrediction);
     }
 }

@@ -13,13 +13,14 @@ public class Main {
     private static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
-        LOGGER.info("Приложение стартовало!");
+        LOGGER.info("РџСЂРёР»РѕР¶РµРЅРёРµ СЃС‚Р°СЂС‚РѕРІР°Р»Рѕ!");
         try {
             TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
             TelegramPCALB telegramPCALB = new TelegramPCALB();
             telegramBotsApi.registerBot(telegramPCALB);
+
         } catch (TelegramApiException e) {
-            LOGGER.error("Ошибка Телеграмм бота", e);
+            LOGGER.error("РћС€РёР±РєР° РўРµР»РµРіСЂР°РјРј Р±РѕС‚Р°", e);
         }
 
     }

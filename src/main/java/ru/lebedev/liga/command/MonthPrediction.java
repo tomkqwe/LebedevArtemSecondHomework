@@ -3,8 +3,8 @@ package ru.lebedev.liga.command;
 import ru.lebedev.liga.model.Currency;
 import ru.lebedev.liga.model.CurrencyModel;
 import ru.lebedev.liga.repository.CurrencyRepository;
-import ru.lebedev.liga.service.ChooseNeedService;
 import ru.lebedev.liga.service.ForecastService;
+import ru.lebedev.liga.validate.CheckCorrectCommand;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -17,27 +17,23 @@ public class MonthPrediction extends AbstractCommand implements Command {
 
     @Override
     public String commandExecute() {
-        LOGGER.debug("MonthPrediction commandExecute , если комманда соответсвует шаблону, " +
-                "выводим ее иначе выводим сообщение о неверной команде");
-        if (super.isCorrectCommand(super.getCommand())) {
+        if (CheckCorrectCommand.isValidCommand(super.getCommand())) {
             return getListWithMonthPredictions()
                     .stream()
                     .map(super::correctOutput)
                     .collect(Collectors.joining("\n"));
         }
-        return super.writeMessage();
+        return getErrorCommand();
     }
 
     private List<CurrencyModel> getListWithMonthPredictions() {
-        LOGGER.debug("MonthPrediction метод getListWithMonthPredictions получаем список с прогнозами");
-        ForecastService service = new ChooseNeedService(super.getCommand(),super.getRepository()).returnNeedService();
+        ForecastService service = super.getService();
         return service.getMonthPrediction(super.getCurrency());
 
     }
 
 
     public List<BigDecimal> getMonthPrediction(Currency currency) {
-        LOGGER.debug("MonthPrediction метод getMonthPrediction получаем список со значениями валюты");
 
         return super.getService()
                 .getMonthPrediction(currency)
@@ -45,4 +41,5 @@ public class MonthPrediction extends AbstractCommand implements Command {
                 .map(CurrencyModel::getValue)
                 .collect(Collectors.toList());
     }
+
 }

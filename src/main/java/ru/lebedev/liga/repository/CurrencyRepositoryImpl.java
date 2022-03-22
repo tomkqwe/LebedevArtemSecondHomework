@@ -22,7 +22,6 @@ public class CurrencyRepositoryImpl implements CurrencyRepository {
 
     static {
         try {
-            LOGGER.debug("Инициализируем пути до файлов с валютой");
             usd = ParseCurrencyCsv.parse("/USD_F01_02_2005_T05_03_2022.csv");
             euro = ParseCurrencyCsv.parse("/EUR_F01_02_2005_T05_03_2022.csv");
             lira = ParseCurrencyCsv.parse("/TRY_F01_02_2005_T05_03_2022.csv");
@@ -35,7 +34,6 @@ public class CurrencyRepositoryImpl implements CurrencyRepository {
 
     @Override
     public List<CurrencyModel> getAllRates(Currency currency) {
-        LOGGER.debug("Каждой валюте назначаем свой список");
         return switch (currency){
             case USD -> usd;
             case EUR -> euro;
@@ -47,19 +45,12 @@ public class CurrencyRepositoryImpl implements CurrencyRepository {
 
     @Override
     public List<CurrencyModel> getAllListRates(Currency currency) {
-        LOGGER.debug("Сортируем по дате каждый список");
         List<CurrencyModel> list = getAllRates(currency);
         list = list.stream()
-                .sorted(Comparator.comparing(CurrencyModel::getDate))
+                .sorted(Comparator.comparing(CurrencyModel::getDate).reversed())
                 .collect(Collectors.toList());
 
         return list;
     }
 
-    @Override
-    public void addRate(CurrencyModel model, Currency currency) {
-        LOGGER.debug("Добавляем в спискок модель");
-        List<CurrencyModel> list = getAllRates(currency);
-        list.add(model);
-    }
 }

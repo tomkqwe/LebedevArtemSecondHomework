@@ -8,5 +8,5 @@ import java.util.List;
 public interface CurrencyRepository {
     List<CurrencyModel> getAllRates(Currency currency);
     List<CurrencyModel> getAllListRates(Currency currency);
-    void addRate(CurrencyModel model,Currency currency);
+
 }
