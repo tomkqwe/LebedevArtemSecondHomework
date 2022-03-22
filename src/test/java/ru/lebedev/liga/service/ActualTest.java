@@ -23,7 +23,7 @@ class ActualTest {
     void getDayPrediction_Check_length_and_check_first_element() {
         List<CurrencyModel> allListRates = repository.getAllListRates(Currency.USD);
         assertThat(allListRates.size()).isEqualTo(4233);
-        assertThat(allListRates.get(0)).isEqualTo(new CurrencyModel(
+        assertThat(allListRates.get(allListRates.size()-1)).isEqualTo(new CurrencyModel(
                 new BigDecimal("1.0"), LocalDate.of(2005, 2, 1), new BigDecimal("28.1136"), Currency.USD));
     }
 

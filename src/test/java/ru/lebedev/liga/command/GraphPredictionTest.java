@@ -21,7 +21,7 @@ class GraphPredictionTest {
 
     @Test
     void commandExecute_Check_Maps_To_Equals() throws PythonExecutionException, IOException {
-        String command = "rate USD,EUR,BGN week actual graph";
+        String command = "rate USD,EUR,BGN -period week -alg actual -output graph";
         ForecastService service = new ChooseAlgorithm(command, repository).returnNeedService();
         GraphPrediction graphPrediction = new GraphPrediction(service, command);
         graphPrediction.commandExecute();

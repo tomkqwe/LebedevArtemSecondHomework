@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/Main.java" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/AMD_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/BGN_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/EUR_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/TRY_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/USD_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/test/java/ru/lebedev/liga/service/MoonAlgorithmTest.java" charset="UTF-8" />
     <file url="PROJECT" charset="windows-1251" />
   </component>
 </project>

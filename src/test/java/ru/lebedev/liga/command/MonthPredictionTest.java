@@ -16,7 +16,7 @@ class MonthPredictionTest {
 
     @Test
     void commandExecute_check_Output() {
-        String command = "rate bgn month actual list";
+        String command = "rate bgn -period month -alg actual -output list";
         ForecastService service = new ChooseAlgorithm(command, repository).returnNeedService();
         MonthPrediction monthPrediction = new MonthPrediction(repository, service, command);
         String result = monthPrediction.commandExecute();

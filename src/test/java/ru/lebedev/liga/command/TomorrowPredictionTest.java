@@ -18,8 +18,8 @@ class TomorrowPredictionTest {
     @Test
     void check_Tomorrow_Prediction_Actual_USD() {
         TomorrowPrediction tomorrowPrediction = new TomorrowPrediction(repository,
-                new ChooseAlgorithm("rate USD tomorrow actual", repository).returnNeedService(),
-                "rate USD tomorrow actual");
+                new ChooseAlgorithm("rate USD -date tomorrow -alg actual", repository).returnNeedService(),
+                "rate USD -date tomorrow -alg actual");
         String correctOutput = tomorrowPrediction.correctOutput
                 (new CurrencyModel(new BigDecimal("1"), LocalDate.now().plusDays(1), new BigDecimal("141.88"), Currency.USD));
         assertThat(correctOutput).isEqualTo(tomorrowPrediction.commandExecute());
@@ -27,8 +27,8 @@ class TomorrowPredictionTest {
     @Test
     void check_Tomorrow_Prediction_Moon_EUR() {
         TomorrowPrediction tomorrowPrediction = new TomorrowPrediction(repository,
-                new ChooseAlgorithm("rate EUR tomorrow moon", repository).returnNeedService(),
-                "rate EUR tomorrow moon");
+                new ChooseAlgorithm("rate EUR -date tomorrow -alg moon", repository).returnNeedService(),
+                "rate EUR -date tomorrow -alg moon");
         String correctOutput = tomorrowPrediction.correctOutput
                 (new CurrencyModel(new BigDecimal("1"), LocalDate.now().plusDays(1), new BigDecimal("85.12"), Currency.USD));
         assertThat(correctOutput).isEqualTo(tomorrowPrediction.commandExecute());

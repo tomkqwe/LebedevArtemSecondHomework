@@ -33,7 +33,7 @@ class ConcretDateTest {
 
     @Test
     void check_commandExecute_Correct_Output() {
-        String command = "rate USD 23.05.2039 actual";
+        String command = "rate USD -date 23.05.2039 -alg actual";
         ChooseAlgorithm service = new ChooseAlgorithm(command, repository);
         ConcretDate concretDate = new ConcretDate(repository, service.returnNeedService(), command);
         String result = concretDate.commandExecute();

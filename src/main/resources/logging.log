@@ -1066,3 +1066,15 @@ java.lang.ArrayIndexOutOfBoundsException: Index 30 out of bounds for length 30
 2022-03-22_01:22:44.872 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_073f6bc2_ec6b_4821_a7ed_0aefe2a8a147 = plt.savefig("graphics.png",dpi=200.0)
 2022-03-22_01:22:44.879 [Artem_LebedevPCH2_bot Telegram Executor] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647901364875-0\exec.py]
 2022-03-22_01:22:45.829 [Artem_LebedevPCH2_bot Telegram Executor] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
+2022-03-22_01:32:56.401 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_4c3ce0aa_fe0d_4b75_8d57_b183d5f98344 = plt.plot(np.array([156.7452, 159.295, 158.0153, 157.0714, 158.5456, 158.4571, 158.6273]),ls="-",label="EUR",lw=3.0)
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_2e25107b_1628_407f_a06a_8fb9f24619ee = plt.plot(np.array([141.8148, 144.6520, 142.6198, 142.2921, 142.8906, 142.3250, 142.5337]),ls="-",label="USD",lw=3.0)
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_f2a2e642_bd69_423a_9190_192ef816ab9b = plt.plot(np.array([80.0899, 81.3293, 80.7188, 80.2967, 81.1147, 80.9863, 81.0335]),ls="-",label="BGN",lw=3.0)
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_1b49a0c7_bbe6_4c76_9117_5403fbb8f325 = plt.xscale("linear")
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_bc34869b_a777_4e0f_ae80_2182982c954f = plt.yscale("linear")
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_22b9772f_a0cc_4620_80e1_ad7fe7ee6f49 = plt.xlabel("Date")
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_02cd9911_6ce4_431a_9abe_d46918356343 = plt.ylabel("CurrencyValue")
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_67346820_3f7e_458c_aa92_107936a6a39c = plt.text(1.0,1.0,"Days")
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.ArgsBuilderImpl - .plot command: plt.title("Graph of my currency")
+2022-03-22_01:32:56.403 [main] DEBUG c.g.s.m.builder.CompositeBuilder - .plot command: ret_fcb61647_6b87_4cd2_9f00_e4f11983c0e2 = plt.savefig("graphics.png",dpi=200.0)
+2022-03-22_01:32:56.412 [main] DEBUG c.g.sh0nk.matplotlib4j.PyCommand - Commands... : [python, C:\Users\79153\AppData\Local\Temp\1647901976406-0\exec.py]
+2022-03-22_01:32:57.353 [main] WARN  c.g.sh0nk.matplotlib4j.PyCommand - 
