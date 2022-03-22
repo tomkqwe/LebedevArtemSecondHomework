@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/Main.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/AMD_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/BGN_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/EUR_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/TRY_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/src/main/resources/USD_F01_02_2005_T05_03_2022.csv" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/command/ContactCommand.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/command/ErrorMessage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/command/InfoCommand.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/command/StartCommand.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/validate/AlgAlgorithmValidateImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/validate/CheckCorrectCommand.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/validate/DatePeriodValidateImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/validate/OutputGraphValidateImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/validate/OutputListValidateImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/validate/Validate.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/view/Console.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/ru/lebedev/liga/view/TelegramPCALB.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/AMD_F01_02_2005_T05_03_2022.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/BGN_F01_02_2005_T05_03_2022.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/EUR_F01_02_2005_T05_03_2022.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/TRY_F01_02_2005_T05_03_2022.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/USD_F01_02_2005_T05_03_2022.csv" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/ru/lebedev/liga/service/MoonAlgorithmTest.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

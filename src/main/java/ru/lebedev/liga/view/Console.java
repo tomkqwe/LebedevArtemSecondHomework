@@ -14,7 +14,7 @@ public class Console {
     }
 
     public String insertCommand() {
-        System.out.println("Введите комманду: ");
+        System.out.println("Р’РІРµРґРёС‚Рµ РєРѕРјРјР°РЅРґСѓ: ");
         return scanner.nextLine();
     }
 

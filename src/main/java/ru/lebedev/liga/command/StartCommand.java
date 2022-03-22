@@ -10,7 +10,7 @@ public class StartCommand extends TelegramDefaultCommands implements Command {
     @Override
     public String commandExecute() {
         String botUsername = new TelegramPCALB().getBotUsername();
-       return  "Привет! "+ SMILE_HI+ " меня зовут "+ botUsername+" для того что бы узнать что я умею нажми /info "+SMILE_WINK;
+       return  "РџСЂРёРІРµС‚! "+ SMILE_HI+ " РјРµРЅСЏ Р·РѕРІСѓС‚ "+ botUsername+" РґР»СЏ С‚РѕРіРѕ С‡С‚Рѕ Р±С‹ СѓР·РЅР°С‚СЊ С‡С‚Рѕ СЏ СѓРјРµСЋ РЅР°Р¶РјРё /info "+SMILE_WINK;
 
     }
 }

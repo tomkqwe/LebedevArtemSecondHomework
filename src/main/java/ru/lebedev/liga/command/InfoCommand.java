@@ -21,14 +21,14 @@ public class InfoCommand extends TelegramDefaultCommands implements Command {
                 .map(Enum::toString)
                 .collect(Collectors
                         .joining(","));
-        strings.add("Доступные валюты:"+SMILE_MONEY_FACE+ collect);
-        strings.add("Доступные алгоритмы " +SMILE_FAX+":\"Актуальный\" - actual, \"Мистический\"- moon, \"Линейной регрессии\"- regress");
-        strings.add("Доступные периоды времени"+SMILE_TIME+": месяц -month, неделя -week");
-        strings.add("Доступные даты прогноза"+SMILE_TIME+": -date завтра tomorrow, любая дата из будущего в формате дд.мм.гггг");
-        strings.add("введите команду вида:"+SMILE_USD+" rate TRY -date tomorrow -alg moon \n для прогноза на завтра");
-        strings.add("введите команду вида:"+SMILE_EUR+" rate EUR -date 22.02.2030 -alg moon \n для прогноза на точную дату из будущего");
-        strings.add("введите команду вида: "+SMILE_USD+" rate USD -period week -alg moon -output list \n для прогноза на неделю или месяц с выводом в список");
-        strings.add("введите команду вида: "+SMILE_EUR+" rate USD,TRY -period month -alg moon -output graph \n для прогноза на неделю или месяц с выводом как картинка-график"+SMILE_GRAPH);
+        strings.add("Р”РѕСЃС‚СѓРїРЅС‹Рµ РІР°Р»СЋС‚С‹:"+SMILE_MONEY_FACE+ collect);
+        strings.add("Р”РѕСЃС‚СѓРїРЅС‹Рµ Р°Р»РіРѕСЂРёС‚РјС‹ " +SMILE_FAX+":\"РђРєС‚СѓР°Р»СЊРЅС‹Р№\" - actual, \"РњРёСЃС‚РёС‡РµСЃРєРёР№\"- moon, \"Р›РёРЅРµР№РЅРѕР№ СЂРµРіСЂРµСЃСЃРёРё\"- regress");
+        strings.add("Р”РѕСЃС‚СѓРїРЅС‹Рµ РїРµСЂРёРѕРґС‹ РІСЂРµРјРµРЅРё"+SMILE_TIME+": РјРµСЃСЏС† -month, РЅРµРґРµР»СЏ -week");
+        strings.add("Р”РѕСЃС‚СѓРїРЅС‹Рµ РґР°С‚С‹ РїСЂРѕРіРЅРѕР·Р°"+SMILE_TIME+": -date Р·Р°РІС‚СЂР° tomorrow, Р»СЋР±Р°СЏ РґР°С‚Р° РёР· Р±СѓРґСѓС‰РµРіРѕ РІ С„РѕСЂРјР°С‚Рµ РґРґ.РјРј.РіРіРіРі");
+        strings.add("РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ РІРёРґР°:"+SMILE_USD+" rate TRY -date tomorrow -alg moon \n РґР»СЏ РїСЂРѕРіРЅРѕР·Р° РЅР° Р·Р°РІС‚СЂР°");
+        strings.add("РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ РІРёРґР°:"+SMILE_EUR+" rate EUR -date 22.02.2030 -alg moon \n РґР»СЏ РїСЂРѕРіРЅРѕР·Р° РЅР° С‚РѕС‡РЅСѓСЋ РґР°С‚Сѓ РёР· Р±СѓРґСѓС‰РµРіРѕ");
+        strings.add("РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ РІРёРґР°: "+SMILE_USD+" rate USD -period week -alg moon -output list \n РґР»СЏ РїСЂРѕРіРЅРѕР·Р° РЅР° РЅРµРґРµР»СЋ РёР»Рё РјРµСЃСЏС† СЃ РІС‹РІРѕРґРѕРј РІ СЃРїРёСЃРѕРє");
+        strings.add("РІРІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ РІРёРґР°: "+SMILE_EUR+" rate USD,TRY -period month -alg moon -output graph \n РґР»СЏ РїСЂРѕРіРЅРѕР·Р° РЅР° РЅРµРґРµР»СЋ РёР»Рё РјРµСЃСЏС† СЃ РІС‹РІРѕРґРѕРј РєР°Рє РєР°СЂС‚РёРЅРєР°-РіСЂР°С„РёРє"+SMILE_GRAPH);
         return String.join("\n", strings);
     }
 }

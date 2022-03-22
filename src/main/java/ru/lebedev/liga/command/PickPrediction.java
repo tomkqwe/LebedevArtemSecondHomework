@@ -25,30 +25,25 @@ public class PickPrediction {
         this.messageFromUser = messageFromUser;
     }
 
-  public  Command pickCommandFromMessage() {
-        if (messageFromUser.equalsIgnoreCase(INFO)) {
-            return new InfoCommand(messageFromUser);
-        }
-        if (messageFromUser.equalsIgnoreCase(START)) {
-            return new StartCommand(messageFromUser);
-        }
-        if (messageFromUser.equalsIgnoreCase(CONTACTS)) {
-            return new ContactCommand(messageFromUser);
-        }
+    public Command pickCommandFromMessage() {
         List<String> wordsInMessage;
         try {
             wordsInMessage = Arrays.asList(messageFromUser.toLowerCase().split(" "));
         } catch (ArrayIndexOutOfBoundsException e) {
             return new ErrorMessage(messageFromUser);
         }
-        if (wordsInMessage.contains(DATE)) {
+        if (messageFromUser.equalsIgnoreCase(INFO)) {
+            return new InfoCommand(messageFromUser);
+        } else if (messageFromUser.equalsIgnoreCase(START)) {
+            return new StartCommand(messageFromUser);
+        } else if (messageFromUser.equalsIgnoreCase(CONTACTS)) {
+            return new ContactCommand(messageFromUser);
+        } else if (wordsInMessage.contains(DATE)) {
             return new CommandDateDataOptionImpl().returnDatePeriodWhatYouWant(repository, service, messageFromUser);
-        }
-        if (wordsInMessage.contains(PERIOD) && CheckCorrectCommand.isValidCommand(messageFromUser)) {
+        } else if (wordsInMessage.contains(PERIOD) && CheckCorrectCommand.isValidCommand(messageFromUser)) {
             return new CommandPeriodDataOptionImpl().returnDatePeriodWhatYouWant(repository, service, messageFromUser);
-        }
-        if (wordsInMessage.contains(PERIOD) && CheckCorrectCommand.isValidGraph(messageFromUser)){
-            return new GraphPrediction(service,messageFromUser);
+        } else if (wordsInMessage.contains(PERIOD) && CheckCorrectCommand.isValidGraph(messageFromUser)) {
+            return new GraphPrediction(service, messageFromUser);
         }
 
         return new ErrorMessage(messageFromUser);
